@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+:root {
+  --background-color: #151515;
+  --primary-color: #ffffff;
+  --secondary-color: #949495;
+  --tertiary-color: #f2c94c;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: var(--background-color);
+  color: var(--primary-color);
+  -webkit-font-smoothing: antialiased;
+  font-size: 16px;
+}
+
+h1,
+h2,
+h3 {
+  font: 500 1em 'Barlow', sans-serif;
+  line-height: 1em;
+}
+
+h1 {
+  font-size: 3em;
+  margin-bottom: 10px;
+}
+
+p {
+  font: 400 1em 'Inter', sans-serif;
+  line-height: 1.6em;
+  color: var(--secondary-color);
+}
+
+a {
+  color: var(--primary-color);
+}
+
+.sub-header {
+  font-size: 12px;
+  text-transform: uppercase;
+  color: var(--tertiary-color);
+  letter-spacing: 3px;
+  margin-bottom: 5px;
+}

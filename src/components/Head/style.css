@@ -1,0 +1,45 @@
+#Head {
+  display: flex;
+  align-items: center;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  height: 100vh;
+  background: black;
+}
+
+#Head img {
+  max-height: 60px;
+  margin-bottom: 20px;
+}
+
+#Head nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+#Head li a {
+  display: block;
+  font: 400 12px 'Inter', sans-serif;
+  color: var(--secondary-color);
+  letter-spacing: 3px;
+  margin-top: 15px;
+  text-transform: uppercase;
+  text-decoration: none;
+  transition: 500ms;
+}
+
+#Head li a hr {
+  display: inline-block;
+  width: 30px;
+  border: 0;
+  height: 0;
+  border-top: 1px solid var(--secondary-color);
+  margin-right: 10px;
+  vertical-align: middle;
+}
+
+#Head nav ul li a:hover {
+  color: var(--primary-color);
+}

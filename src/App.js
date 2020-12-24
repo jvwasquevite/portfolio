@@ -1,8 +1,9 @@
 import React from 'react'
-import './assets/styles/global.css'
+import Routes from './routes'
+import './global.css'
 
 const App = () => {
-  return <div></div>
+  return <Routes />
 }
 
 export default App
