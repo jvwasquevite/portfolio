@@ -15,6 +15,7 @@
 
 #Hero .arrow-down {
   max-height: 15px;
+  cursor: pointer;
   -webkit-animation: floating 1s infinite alternate;
   -moz-animation: floating 1s infinite alternate;
   -o-animation: floating 1s infinite alternate;

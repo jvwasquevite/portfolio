@@ -2,6 +2,9 @@ import React from 'react'
 import { Link } from 'react-scroll'
 import './style.css'
 
+import Parser from 'html-react-parser'
+import { useTranslation } from 'react-i18next'
+
 import logo from '../../assets/images/logo.svg'
 import facebook from '../../assets/images/social-icons/facebook.svg'
 import linkedin from '../../assets/images/social-icons/linkedin.svg'
@@ -10,6 +13,8 @@ import github from '../../assets/images/social-icons/github.svg'
 import whatsapp from '../../assets/images/social-icons/whatsapp.svg'
 
 const Head = () => {
+  const { t, i18n } = useTranslation()
+
   const social = [
     {
       path: facebook,
@@ -38,89 +43,33 @@ const Head = () => {
     },
   ]
 
+  console.log()
+
   return (
     <section id="Head">
       <div className="content">
         <img src={logo} alt="logo" />
-        <p className="sub-header">Sobre mim</p>
-        <h1>
-          Prazer, sou o <b>João</b>.
-        </h1>
-        <p>
-          Graduando em Ciência da Computação pela{' '}
-          <a
-            href="https://portal.ufpel.edu.br/"
-            target="_blank"
-            rel="noreferrer"
-          >
-            Universidade Federal de Pelotas
-          </a>
-          , atuo como desenvolvedor freelancer e diretor presidente na{' '}
-          <a href="http://hut8.com.br/" target="_blank" rel="noreferrer">
-            Hut8
-          </a>
-          . Sou apaixonado por tudo relacionado a inovação tecnológica,
-          empreendedorismo e processos criativos: desde o design até a
-          programação.
-        </p>
+        <p className="sub-header">{t('head.subheader')}</p>
+        <h1>{Parser(t('head.header'))}</h1>
+        <p>{Parser(t('head.content'))}</p>
 
         <nav>
           <ul>
-            <li>
-              <Link
-                activeClass="active"
-                to="Resume"
-                spy={true}
-                smooth={true}
-                duration={1000}
-              >
-                <hr /> Resumo
-              </Link>
-            </li>
-            <li>
-              <Link
-                activeClass="active"
-                to="Skills"
-                spy={true}
-                smooth={true}
-                duration={1000}
-              >
-                <hr /> Skills
-              </Link>
-            </li>
-            <li>
-              <Link
-                activeClass="active"
-                to="Portfolio"
-                spy={true}
-                smooth={true}
-                duration={1000}
-              >
-                <hr /> Portfólio
-              </Link>
-            </li>
-            <li>
-              <Link
-                activeClass="active"
-                to="Articles"
-                spy={true}
-                smooth={true}
-                duration={1000}
-              >
-                <hr /> Artigos
-              </Link>
-            </li>
-            <li>
-              <Link
-                activeClass="active"
-                to="Contact"
-                spy={true}
-                smooth={true}
-                duration={1000}
-              >
-                <hr /> Contato
-              </Link>
-            </li>
+            {t('head.menu', { returnObjects: true }).map(item => {
+              return (
+                <li>
+                  <Link
+                    activeClass="active"
+                    to={item.path}
+                    spy={true}
+                    smooth={true}
+                    duration={1000}
+                  >
+                    <hr /> {item.name}
+                  </Link>
+                </li>
+              )
+            })}
           </ul>
         </nav>
 
@@ -137,6 +86,13 @@ const Head = () => {
               </a>
             )
           })}
+          <select
+            value={i18n.language}
+            onChange={e => i18n.changeLanguage(e.target.value)}
+          >
+            <option value="pt">PT-BR</option>
+            <option value="en">EN-US</option>
+          </select>
         </div>
       </div>
     </section>

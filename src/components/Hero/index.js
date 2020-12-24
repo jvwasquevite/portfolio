@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react'
+import { Link } from 'react-scroll'
 import './style.css'
 
 import happy from '../../assets/images/memojis/happy.png'
@@ -26,7 +27,9 @@ const Hero = () => {
     <section id="Hero">
       <div className="content">
         <img src={slides[currentSlide]} className="memoji" alt="Memojis" />
-        <img src={arrowDown} className="arrow-down" alt="Go to resume" />
+        <Link to="Resume" spy={true} smooth={true} duration={1000}>
+          <img src={arrowDown} className="arrow-down" alt="Go to resume" />
+        </Link>
       </div>
     </section>
   )
