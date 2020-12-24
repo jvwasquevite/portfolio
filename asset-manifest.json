@@ -1,0 +1,30 @@
+{
+  "files": {
+    "main.css": "/portfolio/static/css/main.e5ac563c.chunk.css",
+    "main.js": "/portfolio/static/js/main.a80bbfc3.chunk.js",
+    "main.js.map": "/portfolio/static/js/main.a80bbfc3.chunk.js.map",
+    "runtime-main.js": "/portfolio/static/js/runtime-main.8fed2963.js",
+    "runtime-main.js.map": "/portfolio/static/js/runtime-main.8fed2963.js.map",
+    "static/js/2.7af34af0.chunk.js": "/portfolio/static/js/2.7af34af0.chunk.js",
+    "static/js/2.7af34af0.chunk.js.map": "/portfolio/static/js/2.7af34af0.chunk.js.map",
+    "index.html": "/portfolio/index.html",
+    "static/css/main.e5ac563c.chunk.css.map": "/portfolio/static/css/main.e5ac563c.chunk.css.map",
+    "static/js/2.7af34af0.chunk.js.LICENSE.txt": "/portfolio/static/js/2.7af34af0.chunk.js.LICENSE.txt",
+    "static/media/arrow-down.3f9d2213.svg": "/portfolio/static/media/arrow-down.3f9d2213.svg",
+    "static/media/behance.304d93a9.svg": "/portfolio/static/media/behance.304d93a9.svg",
+    "static/media/facebook.3cf81f91.svg": "/portfolio/static/media/facebook.3cf81f91.svg",
+    "static/media/github.218e258d.svg": "/portfolio/static/media/github.218e258d.svg",
+    "static/media/happy.57301148.png": "/portfolio/static/media/happy.57301148.png",
+    "static/media/linkedin.5135e6c2.svg": "/portfolio/static/media/linkedin.5135e6c2.svg",
+    "static/media/logo.1942e11c.svg": "/portfolio/static/media/logo.1942e11c.svg",
+    "static/media/tongue.93d2f6f6.png": "/portfolio/static/media/tongue.93d2f6f6.png",
+    "static/media/whatsapp.9dec1c14.svg": "/portfolio/static/media/whatsapp.9dec1c14.svg",
+    "static/media/wink.bd14dd34.png": "/portfolio/static/media/wink.bd14dd34.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.8fed2963.js",
+    "static/js/2.7af34af0.chunk.js",
+    "static/css/main.e5ac563c.chunk.css",
+    "static/js/main.a80bbfc3.chunk.js"
+  ]
+}
