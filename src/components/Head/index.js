@@ -1,16 +1,50 @@
 import React from 'react'
+import { Link } from 'react-scroll'
 import './style.css'
 
 import logo from '../../assets/images/logo.svg'
+import facebook from '../../assets/images/social-icons/facebook.svg'
+import linkedin from '../../assets/images/social-icons/linkedin.svg'
+import behance from '../../assets/images/social-icons/behance.svg'
+import github from '../../assets/images/social-icons/github.svg'
+import whatsapp from '../../assets/images/social-icons/whatsapp.svg'
 
 const Head = () => {
+  const social = [
+    {
+      path: facebook,
+      url: 'https://www.facebook.com/jvwasquevite',
+      color: '#3A5A99',
+    },
+    {
+      path: linkedin,
+      url: 'https://www.linkedin.com/in/jvwasquevite/',
+      color: '#0076B2',
+    },
+    {
+      path: behance,
+      url: 'https://www.behance.net/jvwasquevite',
+      color: '#1D6FED',
+    },
+    {
+      path: github,
+      url: 'https://github.com/jvwasquevite/',
+      color: '#3F91CB',
+    },
+    {
+      path: whatsapp,
+      url: 'https://api.whatsapp.com/send?phone=5555997128005',
+      color: '#25D366',
+    },
+  ]
+
   return (
     <section id="Head">
       <div className="content">
         <img src={logo} alt="logo" />
         <p className="sub-header">Sobre mim</p>
         <h1>
-          Prazer, pode me chamar de <b>João</b>.
+          Prazer, sou o <b>João</b>.
         </h1>
         <p>
           Graduando em Ciência da Computação pela{' '}
@@ -29,35 +63,81 @@ const Head = () => {
           empreendedorismo e processos criativos: desde o design até a
           programação.
         </p>
+
         <nav>
           <ul>
             <li>
-              <a href="#resume">
+              <Link
+                activeClass="active"
+                to="Resume"
+                spy={true}
+                smooth={true}
+                duration={1000}
+              >
                 <hr /> Resumo
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="#skills">
+              <Link
+                activeClass="active"
+                to="Skills"
+                spy={true}
+                smooth={true}
+                duration={1000}
+              >
                 <hr /> Skills
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="#portfolio">
+              <Link
+                activeClass="active"
+                to="Portfolio"
+                spy={true}
+                smooth={true}
+                duration={1000}
+              >
                 <hr /> Portfólio
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="#articles">
+              <Link
+                activeClass="active"
+                to="Articles"
+                spy={true}
+                smooth={true}
+                duration={1000}
+              >
                 <hr /> Artigos
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="#contact">
+              <Link
+                activeClass="active"
+                to="Contact"
+                spy={true}
+                smooth={true}
+                duration={1000}
+              >
                 <hr /> Contato
-              </a>
+              </Link>
             </li>
           </ul>
         </nav>
+
+        <div className="social">
+          {social.map(icon => {
+            return (
+              <a
+                href={icon.url}
+                style={{ background: icon.color }}
+                target="_blank"
+                rel="noreferrer"
+              >
+                <img src={icon.path} alt={icon.path} />
+              </a>
+            )
+          })}
+        </div>
       </div>
     </section>
   )

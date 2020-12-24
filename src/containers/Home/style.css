@@ -1,10 +1,6 @@
 #Home {
   display: grid;
   grid-template-columns: 1fr 570px;
-  gap: 100px;
   margin: 0 100px;
-}
-
-#Home main {
-  background: grey;
+  gap: 100px;
 }

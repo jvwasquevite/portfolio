@@ -3,9 +3,8 @@
   align-items: center;
   position: -webkit-sticky;
   position: sticky;
-  top: 0;
   height: 100vh;
-  background: black;
+  top: 0;
 }
 
 #Head img {
@@ -27,7 +26,8 @@
   margin-top: 15px;
   text-transform: uppercase;
   text-decoration: none;
-  transition: 500ms;
+  cursor: pointer;
+  transition: 300ms;
 }
 
 #Head li a hr {
@@ -38,8 +38,41 @@
   border-top: 1px solid var(--secondary-color);
   margin-right: 10px;
   vertical-align: middle;
+  transition: 300ms;
 }
 
-#Head nav ul li a:hover {
+#Head nav ul li:hover a,
+#Head nav ul li .active {
   color: var(--primary-color);
+}
+
+#Head nav ul li:hover hr,
+#Head nav ul li .active hr {
+  border-color: var(--primary-color);
+  width: 60px;
+}
+
+#Head .social {
+  display: flex;
+  gap: 5px;
+  margin-top: 20px;
+}
+
+#Head .social a {
+  position: relative;
+  width: 30px;
+  height: 30px;
+  border-radius: 3px;
+  text-align: center;
+}
+
+#Head .social a:hover {
+  opacity: 0.6;
+}
+
+#Head .social img {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
 }
