@@ -2,7 +2,7 @@ import React from 'react'
 import './style.css'
 
 const Foot = () => {
-  return <section id="Foot">Rodapé</section>
+  return <footer id="Foot">Rodapé</footer>
 }
 
 export default Foot

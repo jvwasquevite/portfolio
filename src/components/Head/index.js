@@ -55,9 +55,9 @@ const Head = () => {
 
         <nav>
           <ul>
-            {t('head.menu', { returnObjects: true }).map(item => {
+            {t('head.menu', { returnObjects: true }).map((item, key) => {
               return (
-                <li>
+                <li key={key}>
                   <Link
                     activeClass="active"
                     to={item.path}
@@ -74,13 +74,14 @@ const Head = () => {
         </nav>
 
         <div className="social">
-          {social.map(icon => {
+          {social.map((icon, key) => {
             return (
               <a
                 href={icon.url}
                 style={{ background: icon.color }}
                 target="_blank"
                 rel="noreferrer"
+                key={key}
               >
                 <img src={icon.path} alt={icon.path} />
               </a>
