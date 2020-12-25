@@ -46,7 +46,7 @@ const Head = () => {
   console.log()
 
   return (
-    <section id="Head">
+    <header id="Head">
       <div className="content">
         <img src={logo} alt="logo" />
         <p className="sub-header">{t('head.subheader')}</p>
@@ -95,7 +95,7 @@ const Head = () => {
           </select>
         </div>
       </div>
-    </section>
+    </header>
   )
 }
 

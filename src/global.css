@@ -3,6 +3,7 @@
 
 :root {
   --background-color: #151515;
+  --background-secondary-color: #202022;
   --primary-color: #ffffff;
   --secondary-color: #949495;
   --tertiary-color: #f2c94c;
@@ -22,6 +23,23 @@ body {
   font-size: 16px;
 }
 
+section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+a {
+  color: var(--primary-color);
+  transition: 300ms;
+}
+
+a:hover {
+  opacity: 0.8;
+}
+
 h1,
 h2,
 h3 {
@@ -34,22 +52,32 @@ h1 {
   margin-bottom: 10px;
 }
 
+h2 {
+  font-size: 1.5em;
+  margin-bottom: 5px;
+}
+
+h3 {
+  font-size: 1.1em;
+  margin-bottom: 5px;
+}
+
 p {
   font: 400 1em 'Inter', sans-serif;
   line-height: 1.6em;
   color: var(--secondary-color);
 }
 
-a {
-  color: var(--primary-color);
-}
-
-.sub-header {
+p.sub-header {
   font-size: 12px;
   text-transform: uppercase;
   color: var(--tertiary-color);
   letter-spacing: 3px;
   margin-bottom: 5px;
+}
+
+p.secondary-text {
+  font-size: 0.9em;
 }
 
 select {
@@ -69,6 +97,37 @@ select {
   appearance: none;
 }
 
-#Head select:-ms-expand {
+select:-ms-expand {
   display: none;
+}
+
+.button {
+  display: block;
+  font: 400 12px 'Inter', sans-serif;
+  color: var(--secondary-color);
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  text-decoration: none;
+  cursor: pointer;
+  transition: 300ms;
+}
+
+.button hr {
+  display: inline-block;
+  width: 30px;
+  border: 0;
+  height: 0;
+  border-top: 1px solid var(--secondary-color);
+  margin-right: 10px;
+  vertical-align: middle;
+  transition: 300ms;
+}
+
+.button:hover {
+  color: var(--primary-color);
+}
+
+.button:hover hr {
+  border-color: var(--primary-color);
+  width: 60px;
 }

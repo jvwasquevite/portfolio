@@ -12,7 +12,7 @@ import Foot from '../../components/Foot'
 
 const Home = () => {
   return (
-    <section id="Home">
+    <main id="Home">
       <aside>
         <Head />
       </aside>
@@ -25,7 +25,7 @@ const Home = () => {
         <Contact />
         <Foot />
       </main>
-    </section>
+    </main>
   )
 }
 
