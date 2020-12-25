@@ -57,6 +57,32 @@ const resources = {
         ],
         button: 'Ver no LinkedIn',
       },
+      skills: [
+        {
+          subheader: 'Fullstack',
+          header: 'Node, React e Vue.js',
+          secondarytext: 'Intermediário a avançado',
+          level: '80%',
+        },
+        {
+          subheader: 'Data Science',
+          header: 'Python Pandas',
+          secondarytext: 'Intermediário',
+          level: '50%',
+        },
+        {
+          subheader: 'Design UI/UX',
+          header: 'Figma e Adobe XD',
+          secondarytext: 'Intermediário a avançado',
+          level: '70%',
+        },
+        {
+          subheader: 'Gestão empresarial',
+          header: 'Modelagem e metodologias ágeis',
+          secondarytext: 'Avançado',
+          level: '90%',
+        },
+      ],
     },
   },
   en: {
