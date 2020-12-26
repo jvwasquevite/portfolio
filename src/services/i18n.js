@@ -210,6 +210,20 @@ const resources = {
         ],
         button: { name: 'Ver currículo em PDF', url: '/curriculo.pdf' },
       },
+      foot: {
+        text: `Feito com <a href="https://pt-br.reactjs.org/" target="_blank" rel="noreferrer">React</a>, muito café e paciência.`,
+        links: [
+          {
+            name: 'Ver código fonte no GitHub',
+            url: 'https://github.com/jvwasquevite/portfolio',
+          },
+          {
+            name: 'Ver layout no Figma',
+            url:
+              'https://www.figma.com/file/pMUBIGLHYHFXXrlWafPH3v/jvwasquevite',
+          },
+        ],
+      },
     },
   },
   en: {
@@ -397,6 +411,20 @@ const resources = {
           },
         ],
         button: { name: 'View resume in PDF', url: '/resume.pdf' },
+      },
+      foot: {
+        text: `Made with <a href="https://pt-br.reactjs.org/" target="_blank" rel="noreferrer">React</a>, lots of coffee and patience.`,
+        links: [
+          {
+            name: 'View source code on GitHub',
+            url: 'https://github.com/jvwasquevite/portfolio',
+          },
+          {
+            name: 'See layout on Figma',
+            url:
+              'https://www.figma.com/file/pMUBIGLHYHFXXrlWafPH3v/jvwasquevite',
+          },
+        ],
       },
     },
   },

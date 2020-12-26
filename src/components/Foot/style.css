@@ -1,3 +1,18 @@
 #Foot {
-  text-align: center;
+  text-align: right;
+  margin-bottom: 60px;
+}
+
+#Foot p {
+  margin-bottom: 10px;
+}
+
+#Foot .links a {
+  display: block;
+  font: 400 10px 'Inter', sans-serif;
+  line-height: 1.8em;
+  color: var(--secondary-color);
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  text-decoration: none;
 }
