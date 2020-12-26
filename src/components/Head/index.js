@@ -1,9 +1,11 @@
 import React from 'react'
-import { Link } from 'react-scroll'
 import './style.css'
 
 import Parser from 'html-react-parser'
 import { useTranslation } from 'react-i18next'
+
+import LangSwitcher from './LangSwitcher'
+import Menu from './Menu'
 
 import logo from '../../assets/images/logo.svg'
 import facebook from '../../assets/images/social-icons/facebook.svg'
@@ -13,7 +15,7 @@ import github from '../../assets/images/social-icons/github.svg'
 import whatsapp from '../../assets/images/social-icons/whatsapp.svg'
 
 const Head = () => {
-  const { t, i18n } = useTranslation()
+  const { t } = useTranslation()
 
   const social = [
     {
@@ -48,31 +50,12 @@ const Head = () => {
   return (
     <header id="Head">
       <div className="content">
-        <img src={logo} alt="logo" />
+        <img src={logo} alt="logo" className="logo" />
         <p className="sub-header">{t('head.subheader')}</p>
         <h1>{Parser(t('head.header'))}</h1>
         <p>{Parser(t('head.content'))}</p>
 
-        <nav>
-          <ul>
-            {t('head.menu', { returnObjects: true }).map((item, key) => {
-              return (
-                <li key={key}>
-                  <Link
-                    activeClass="active"
-                    to={item.path}
-                    spy={true}
-                    smooth={true}
-                    offset={0}
-                    duration={1000}
-                  >
-                    <hr /> {item.name}
-                  </Link>
-                </li>
-              )
-            })}
-          </ul>
-        </nav>
+        <Menu />
 
         <div className="social">
           {social.map((icon, key) => {
@@ -88,13 +71,7 @@ const Head = () => {
               </a>
             )
           })}
-          <select
-            value={i18n.language}
-            onChange={e => i18n.changeLanguage(e.target.value)}
-          >
-            <option value="pt">PT-BR</option>
-            <option value="en">EN-US</option>
-          </select>
+          <LangSwitcher />
         </div>
       </div>
     </header>

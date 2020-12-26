@@ -4,3 +4,11 @@
   margin: 0 100px;
   gap: 100px;
 }
+
+/* For mobile devices */
+@media (max-width: 480px) {
+  #Home {
+    display: block;
+    margin: 0 30px;
+  }
+}

@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react'
-import { getPosts } from '../../services/requests'
 import './style.css'
 
+import { getPosts } from '../../services/requests'
 import { useTranslation } from 'react-i18next'
 import Parser from 'html-react-parser'
 

@@ -15,6 +15,12 @@
   animation: floating 1s infinite alternate;
 }
 
+@media (max-width: 480px) {
+  #Hero {
+    padding: 0;
+  }
+}
+
 @-webkit-keyframes floating {
   0% {
     transform: translateY(0);

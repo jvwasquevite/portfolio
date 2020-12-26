@@ -28,7 +28,7 @@ const resources = {
         header: `Prazer, sou o <b>João</b>.`,
         content: `Graduando em Ciência da Computação pela
         <a href="https://portal.ufpel.edu.br/" target="_blank" rel="noreferrer">
-        Universidade Federal de Pelotas</a>, atuo como desenvolvedor freelancer
+        Universidade Federal de Pelotas</a>, atuo como desenvolvedor frontend
         e diretor presidente na <a href="http://hut8.com.br/" target="_blank" rel="noreferrer">
         Hut8</a>. Sou apaixonado por tudo relacionado a inovação tecnológica,
         empreendedorismo e processos criativos: desde o design até a
@@ -226,6 +226,7 @@ const resources = {
       },
     },
   },
+
   en: {
     translation: {
       head: {
@@ -233,7 +234,7 @@ const resources = {
         header: `What's up? I'm <b>João</b>.`,
         content: `Graduating in Computer Science at
         <a href="https://portal.ufpel.edu.br/" target="_blank" rel="noreferrer">
-        Federal University of Pelotas</a>, I work as a freelance developer and president at
+        Federal University of Pelotas</a>, I work as frontend developer and president at
         <a href="http://hut8.com.br/" target="_blank" rel="noreferrer">
         Hut8</a>. I'm passionate about everything related to technological innovation, 
         entrepreneurship and creative processes: from design to programming.`,

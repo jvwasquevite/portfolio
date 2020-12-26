@@ -10,22 +10,27 @@ import Articles from '../../components/Articles'
 import Contact from '../../components/Contact'
 import Foot from '../../components/Foot'
 
+import Navbar from '../../components/Navbar'
+
 const Home = () => {
   return (
-    <main id="Home">
-      <aside>
-        <Head />
-      </aside>
-      <main>
-        <Hero />
-        <Resume />
-        <Skills />
-        <Portfolio />
-        <Articles />
-        <Contact />
-        <Foot />
+    <>
+      <main id="Home">
+        <aside>
+          <Head />
+        </aside>
+        <main>
+          <Hero />
+          <Resume />
+          <Skills />
+          <Portfolio />
+          <Articles />
+          <Contact />
+          <Foot />
+        </main>
       </main>
-    </main>
+      <Navbar />
+    </>
   )
 }
 

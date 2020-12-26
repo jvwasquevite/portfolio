@@ -48,3 +48,22 @@
 #Resume .button {
   align-self: flex-end;
 }
+
+@media (max-width: 480px) {
+  #Resume .container {
+    height: auto;
+  }
+
+  #Resume .image {
+    width: 100px;
+  }
+
+  #Resume .image img {
+    max-width: 60px;
+  }
+
+  #Resume .wid {
+    width: auto;
+    height: auto;
+  }
+}
