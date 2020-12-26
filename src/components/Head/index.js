@@ -63,6 +63,7 @@ const Head = () => {
                     to={item.path}
                     spy={true}
                     smooth={true}
+                    offset={0}
                     duration={1000}
                   >
                     <hr /> {item.name}

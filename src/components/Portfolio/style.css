@@ -1,0 +1,82 @@
+#Portfolio .slider {
+  position: relative;
+  width: 100%;
+  padding-bottom: 30px;
+  border-radius: 3px;
+  overflow: hidden;
+}
+
+#Portfolio .content {
+  display: flex;
+  gap: 30px;
+  position: relative;
+  transition: left 500ms ease-in-out;
+}
+
+#Portfolio .slide {
+  min-width: 80%;
+  max-width: 80%;
+}
+
+#Portfolio .mockup {
+  margin-bottom: 30px;
+}
+
+#Portfolio .mockup img.desktop {
+  max-width: 320px;
+  border-radius: 3px;
+}
+
+#Portfolio .mockup img.mobile {
+  max-width: 80px;
+  border-radius: 3px;
+  margin-left: -60px;
+}
+
+#Portfolio .slide h2 {
+  font-weight: 600;
+}
+
+#Portfolio .skills {
+  margin-top: 15px;
+  margin-bottom: 10px;
+}
+
+#Portfolio span.skill {
+  background: black;
+  font: 500 1em 'Barlow', sans-serif;
+  color: var(--secondary-color);
+  padding: 5px 10px;
+  border-radius: 3px;
+  margin-right: 5px;
+}
+
+#Portfolio .button {
+  margin-top: 15px;
+}
+
+#Portfolio .next {
+  display: flex;
+  position: absolute;
+  top: 0;
+  right: 0;
+  background: linear-gradient(
+    90deg,
+    rgba(0, 0, 0, 0) 0%,
+    rgba(21, 21, 21, 0.6) 50%,
+    rgba(21, 21, 21, 1) 100%
+  );
+  width: 20%;
+  height: 100%;
+  cursor: pointer;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+#Portfolio .next img {
+  max-height: 20px;
+}
+
+#Portfolio .more {
+  align-self: flex-end;
+}
