@@ -177,7 +177,38 @@ const resources = {
             button: ['Ver projeto', 'https://leafpayrh.com.br/'],
           },
         ],
-        button: `Mais no Behance`,
+        button: {
+          name: 'Mais no Behance',
+          url: 'https://www.behance.net/jvwasquevite',
+        },
+      },
+      articles: {
+        integration: `Integrado com a <a href="https://github.com/Medium/medium-api-docs" target="_blank" rel="noreferrer">API do Medium</a>`,
+        button: {
+          name: 'Mais no Medium',
+          url: 'https://medium.com/@jvwasquevite',
+        },
+      },
+      contact: {
+        subheader: 'Fale comigo',
+        header: `Vamos <b>conversar</b>?`,
+        content: [
+          {
+            subheader: 'Meu WhatsApp',
+            header: '+55 55 9 9712 8005',
+            url: 'https://api.whatsapp.com/send?phone=5555997128005',
+          },
+          {
+            subheader: 'Meu Email',
+            header: 'hello@jvwasquevite.com',
+            url: 'mailto:hello@jvwasquevite.com',
+          },
+          {
+            subheader: 'Em algum lugar entre',
+            header: 'Alegrete e Pelotas/RS',
+          },
+        ],
+        button: { name: 'Ver currículo em PDF', url: '/curriculo.pdf' },
       },
     },
   },
@@ -336,7 +367,36 @@ const resources = {
             button: ['See project', 'https://leafpayrh.com.br/'],
           },
         ],
-        button: `More on Behance`,
+        button: {
+          name: 'More on Behance',
+          url: 'https://www.behance.net/jvwasquevite',
+        },
+      },
+      articles: {
+        integration: `Integrated with <a href="https://github.com/Medium/medium-api-docs" target="_blank" rel="noreferrer">Medium API</a>`,
+        button: {
+          name: 'More on Medium',
+          url: 'https://medium.com/@jvwasquevite',
+        },
+      },
+      contact: {
+        subheader: 'Talk to me',
+        header: `Let's <b>talk</b>?`,
+        content: [
+          {
+            subheader: 'My WhatsApp',
+            header: '+55 55 9 9712 8005',
+          },
+          {
+            subheader: 'My Email',
+            header: 'hello@jvwasquevite.com',
+          },
+          {
+            subheader: 'Somewhere between',
+            header: 'Alegrete e Pelotas/RS',
+          },
+        ],
+        button: { name: 'View resume in PDF', url: '/resume.pdf' },
       },
     },
   },

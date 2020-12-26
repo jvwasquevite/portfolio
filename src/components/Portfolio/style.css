@@ -74,9 +74,50 @@
 }
 
 #Portfolio .next img {
-  max-height: 20px;
+  max-height: 25px;
+  opacity: 0.4;
+  -webkit-animation: next 1s infinite alternate;
+  -moz-animation: next 1s infinite alternate;
+  -o-animation: next 1s infinite alternate;
+  animation: next 1s infinite alternate;
 }
 
 #Portfolio .more {
   align-self: flex-end;
+}
+
+@-webkit-keyframes next {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-10px);
+  }
+}
+
+@-moz-keyframes next {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-10px);
+  }
+}
+
+@-o-keyframes next {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-10px);
+  }
+}
+
+@keyframes next {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-10px);
+  }
 }

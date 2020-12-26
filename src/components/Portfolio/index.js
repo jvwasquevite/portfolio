@@ -44,8 +44,10 @@ const Portfolio = () => {
                 <p className="sub-header">{item.subheader}</p>
                 <h2>{item.header}</h2>
                 <div className="skills">
-                  {item.skills.map(skill => (
-                    <span className="skill">{skill}</span>
+                  {item.skills.map((skill, key) => (
+                    <span className="skill" key={key}>
+                      {skill}
+                    </span>
                   ))}
                 </div>
                 <p className="secondary-text">{Parser(item.description)}</p>
@@ -68,12 +70,12 @@ const Portfolio = () => {
         </div>
       </div>
       <a
-        href="https://www.behance.net/jvwasquevite"
+        href={t('portfolio.button.url')}
         className="button more"
         target="_blank"
         rel="noreferrer"
       >
-        <hr /> {t('portfolio.button')}
+        <hr /> {t('portfolio.button.name')}
       </a>
     </section>
   )

@@ -28,3 +28,19 @@
 #Articles a {
   text-decoration: none;
 }
+
+#Articles .foot {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  margin-top: 30px;
+}
+
+#Articles .foot p {
+  font: 400 10px 'Inter', sans-serif;
+  color: var(--secondary-color);
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  text-decoration: none;
+}
