@@ -1,4 +1,5 @@
 header#Head {
+  align-items: flex-start;
   position: -webkit-sticky;
   position: sticky;
   top: 0;
@@ -9,47 +10,27 @@ header#Head {
   margin-bottom: 20px;
 }
 
-#Head .social {
+#Head .foot {
   display: flex;
-  gap: 5px;
   margin-top: 20px;
-}
-
-#Head .social a {
-  position: relative;
-  width: 30px;
-  height: 30px;
-  border-radius: 3px;
-  text-align: center;
-}
-
-#Head .social a:hover {
-  opacity: 0.6;
-}
-
-#Head .social img {
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
 }
 
 @media (max-width: 480px) {
   #Head {
     position: static;
-    padding-bottom: 10px;
+    justify-content: flex-end;
+    padding-top: 60px;
+    height: auto;
   }
 
   #Head .logo {
     max-height: 50px;
+    margin: 0 auto;
   }
 
-  #Head nav,
-  #Head select {
+  #Head .about,
+  #Head .menu,
+  #Head .foot {
     display: none;
-  }
-
-  #Head .social {
-    margin-top: 20px;
   }
 }

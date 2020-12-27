@@ -1,8 +1,8 @@
 import React, { useState } from 'react'
 import './style.css'
 
-import LangSwitcher from '../Head/LangSwitcher'
-import Menu from '../Head/Menu'
+import LangSwitcher from '../helpers/LangSwitcher'
+import Menu from '../helpers/Menu'
 
 const Navbar = () => {
   const [menu, setMenu] = useState(false)

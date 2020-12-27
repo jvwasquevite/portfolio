@@ -17,7 +17,7 @@
 
 @media (max-width: 480px) {
   #Hero {
-    padding: 0;
+    height: auto;
   }
 }
 

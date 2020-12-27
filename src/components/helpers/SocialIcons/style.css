@@ -1,0 +1,23 @@
+#SocialIcons {
+  display: flex;
+}
+
+#SocialIcons a {
+  position: relative;
+  width: 30px;
+  height: 30px;
+  margin-right: 5px;
+  border-radius: 3px;
+  text-align: center;
+}
+
+#SocialIcons a:hover {
+  opacity: 0.6;
+}
+
+#SocialIcons img {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}

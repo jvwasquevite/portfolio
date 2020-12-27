@@ -11,6 +11,7 @@ import Contact from '../../components/Contact'
 import Foot from '../../components/Foot'
 
 import Navbar from '../../components/Navbar'
+import About from '../../components/About'
 
 const Home = () => {
   return (
@@ -21,6 +22,7 @@ const Home = () => {
         </aside>
         <main>
           <Hero />
+          <About />
           <Resume />
           <Skills />
           <Portfolio />

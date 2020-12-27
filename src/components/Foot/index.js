@@ -14,9 +14,9 @@ const Foot = () => {
       <p>{Parser(t('foot.text'))}</p>
 
       <div className="links">
-        {links.map(link => {
+        {links.map((link, key) => {
           return (
-            <a href={t(link.url)} target="_blank" rel="noreferrer">
+            <a href={t(link.url)} key={key} target="_blank" rel="noreferrer">
               {t(link.name)}
             </a>
           )

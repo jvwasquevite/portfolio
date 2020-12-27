@@ -81,7 +81,7 @@ p.secondary-text {
   font-size: 0.9em;
 }
 
-select {
+button {
   background: #202022;
   height: 31px;
   border: none;
@@ -91,15 +91,6 @@ select {
   text-transform: uppercase;
   color: var(--secondary-color);
   letter-spacing: 3px;
-  -o-appearance: none;
-  -ms-appearance: none;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-}
-
-select:-ms-expand {
-  display: none;
 }
 
 .button {
@@ -135,12 +126,10 @@ select:-ms-expand {
 
 /* For mobile devices */
 @media (max-width: 480px) {
-  section,
-  header {
+  section {
     height: auto;
     padding: 60px 0;
   }
-
   h1 {
     font-size: 2em;
   }
