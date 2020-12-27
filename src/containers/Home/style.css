@@ -5,10 +5,18 @@
   gap: 100px;
 }
 
+#Home main #About {
+  display: none;
+}
+
 /* For mobile devices */
 @media (max-width: 480px) {
   #Home {
     display: block;
     margin: 0 30px;
+  }
+
+  #Home main #About {
+    display: block;
   }
 }

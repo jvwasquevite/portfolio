@@ -14,13 +14,12 @@ header#Head {
   display: flex;
   margin-top: 20px;
 }
-
+/* For mobile devices */
 @media (max-width: 480px) {
   #Head {
     position: static;
     justify-content: flex-end;
-    padding-top: 60px;
-    height: auto;
+    height: 110px;
   }
 
   #Head .logo {

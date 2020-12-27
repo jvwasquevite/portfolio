@@ -1,0 +1,10 @@
+#About .social {
+  margin-top: 15px;
+  display: none;
+}
+
+@media (max-width: 480px) {
+  #About .social {
+    display: block;
+  }
+}

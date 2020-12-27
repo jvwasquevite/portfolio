@@ -83,10 +83,10 @@ p.secondary-text {
 
 button {
   background: #202022;
+  width: 70px;
   height: 31px;
   border: none;
   border-radius: 3px;
-  padding: 0 10px;
   font-size: 12px;
   text-transform: uppercase;
   color: var(--secondary-color);

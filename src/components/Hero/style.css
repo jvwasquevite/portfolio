@@ -17,7 +17,8 @@
 
 @media (max-width: 480px) {
   #Hero {
-    height: auto;
+    height: 90vh;
+    margin-top: -110px;
   }
 }
 
