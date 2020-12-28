@@ -75,16 +75,16 @@ const resources = {
       skills: {
         content: [
           {
-            subheader: 'Fullstack',
-            header: 'Node, React e Vue.js',
+            subheader: 'Frontend',
+            header: 'React e Vue.js',
             secondarytext: 'Intermediário a avançado',
             level: '80%',
           },
           {
             subheader: 'Data Science',
             header: 'Python Pandas',
-            secondarytext: 'Intermediário',
-            level: '50%',
+            secondarytext: 'Iniciante',
+            level: '40%',
           },
           {
             subheader: 'Design UI/UX',
@@ -196,12 +196,10 @@ const resources = {
           {
             subheader: 'Meu WhatsApp',
             header: '+55 55 9 9712 8005',
-            url: 'https://api.whatsapp.com/send?phone=5555997128005',
           },
           {
             subheader: 'Meu Email',
-            header: 'hello@jvwasquevite.com',
-            url: 'mailto:hello@jvwasquevite.com',
+            header: 'joao@jvwasquevite.com',
           },
           {
             subheader: 'Em algum lugar entre',
@@ -280,19 +278,19 @@ const resources = {
       skills: {
         content: [
           {
-            subheader: 'Fullstack',
-            header: 'Node, React e Vue.js',
+            subheader: 'Frontend',
+            header: 'React e Vue.js',
             secondarytext: 'Intermediate to advanced',
             level: '80%',
           },
           {
             subheader: 'Data Science',
             header: 'Python Pandas',
-            secondarytext: 'Intermediate',
-            level: '50%',
+            secondarytext: 'Beginner',
+            level: '40%',
           },
           {
-            subheader: 'Design UI/UX',
+            subheader: 'UI/UX Design',
             header: 'Figma e Adobe XD',
             secondarytext: 'Intermediate to advanced',
             level: '70%',
@@ -404,7 +402,7 @@ const resources = {
           },
           {
             subheader: 'My Email',
-            header: 'hello@jvwasquevite.com',
+            header: 'joao@jvwasquevite.com',
           },
           {
             subheader: 'Somewhere between',
