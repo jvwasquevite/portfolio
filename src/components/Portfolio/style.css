@@ -9,12 +9,12 @@
 #Portfolio .content {
   position: relative;
   display: flex;
-  gap: 30px;
   transition: left 500ms ease-in-out;
 }
 
 #Portfolio .slide {
   min-width: 80%;
+  margin-right: 30px;
 }
 
 #Portfolio .mockup {
@@ -39,7 +39,6 @@
 #Portfolio .skills {
   display: flex;
   flex-wrap: wrap;
-  gap: 5px;
   margin-top: 15px;
   margin-bottom: 10px;
 }
@@ -48,6 +47,7 @@
   background: black;
   font: 500 1em 'Barlow', sans-serif;
   color: var(--secondary-color);
+  margin-right: 5px;
   padding: 5px 10px;
   border-radius: 3px;
 }
@@ -92,7 +92,7 @@
 }
 
 /* For mobile devices */
-@media (max-width: 480px) {
+@media (max-width: 1150px) {
   #Portfolio .slide {
     min-width: 100%;
   }

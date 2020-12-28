@@ -20,7 +20,7 @@
 }
 
 /* For mobile devices */
-@media (max-width: 480px) {
+@media (max-width: 1150px) {
   #Hero {
     height: 90vh;
     margin-top: -110px;

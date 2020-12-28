@@ -39,7 +39,7 @@
 }
 
 /* For mobile devices */
-@media (max-width: 480px) {
+@media (max-width: 1150px) {
   #Resume .container {
     display: block;
   }
@@ -47,7 +47,6 @@
   #Resume .image {
     width: 100%;
     padding: 20px;
-    justify-content: flex-start;
   }
 
   #Resume .image img {

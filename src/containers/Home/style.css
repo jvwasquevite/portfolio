@@ -11,7 +11,7 @@
 }
 
 /* For mobile devices */
-@media (max-width: 480px) {
+@media (max-width: 1150px) {
   #Home {
     display: block;
     width: 100%;
