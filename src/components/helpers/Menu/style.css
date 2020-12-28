@@ -38,8 +38,8 @@
   width: 60px;
 }
 
-/* For mobile devices */
-@media (max-width: 480px) {
+/* For smaller devices */
+@media (max-width: 1150px) {
   /* #Menu nav ul li a {
     display: none;
   }

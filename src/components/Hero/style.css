@@ -19,7 +19,7 @@
   display: none;
 }
 
-/* For mobile devices */
+/* For smaller devices */
 @media (max-width: 1150px) {
   #Hero {
     height: 90vh;
@@ -32,6 +32,14 @@
 
   #Hero .to-about {
     display: block;
+  }
+}
+
+/* For landscape and tablet devices */
+@media (min-width: 480px) and (max-width: 1150px) {
+  #Hero {
+    height: auto;
+    margin-top: 0px;
   }
 }
 

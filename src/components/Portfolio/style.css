@@ -91,7 +91,7 @@
   align-self: flex-end;
 }
 
-/* For mobile devices */
+/* For smaller devices */
 @media (max-width: 1150px) {
   #Portfolio .slide {
     min-width: 100%;

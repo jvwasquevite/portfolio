@@ -10,7 +10,7 @@
   display: none;
 }
 
-/* For mobile devices */
+/* For smaller devices */
 @media (max-width: 1150px) {
   #Home {
     display: block;

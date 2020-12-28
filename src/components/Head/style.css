@@ -14,7 +14,7 @@ header#Head {
   margin-top: 20px;
 }
 
-/* For mobile devices */
+/* For smaller devices */
 @media (max-width: 1150px) {
   #Head {
     position: static;

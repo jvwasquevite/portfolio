@@ -45,7 +45,7 @@
   text-decoration: none;
 }
 
-/* For mobile devices */
+/* For smaller devices */
 @media (max-width: 1150px) {
   #Articles .container {
     display: block;

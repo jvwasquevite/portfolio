@@ -126,7 +126,7 @@ button {
   width: 60px;
 }
 
-/* For mobile devices */
+/* For smaller devices */
 @media (max-width: 1150px) {
   section {
     height: auto;

@@ -38,7 +38,7 @@
   align-self: flex-end;
 }
 
-/* For mobile devices */
+/* For smaller devices */
 @media (max-width: 1150px) {
   #Resume .container {
     display: block;

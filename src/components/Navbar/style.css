@@ -27,8 +27,8 @@
   padding-left: 15px;
 }
 
-/* For mobile devices */
-@media (max-width: 480px) {
+/* For smaller devices */
+@media (max-width: 1150px) {
   #Navbar {
     display: block;
   }

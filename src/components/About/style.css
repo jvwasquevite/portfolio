@@ -3,7 +3,7 @@
   margin-top: 15px;
 }
 
-/* For mobile devices */
+/* For smaller devices */
 @media (max-width: 1150px) {
   #About {
     padding: 30px 0;
