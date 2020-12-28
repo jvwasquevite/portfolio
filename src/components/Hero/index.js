@@ -2,9 +2,9 @@ import React, { useEffect, useState } from 'react'
 import { Link } from 'react-scroll'
 import './style.css'
 
-import happy from '../../assets/images/memojis/happy.png'
-import wink from '../../assets/images/memojis/wink.png'
-import tongue from '../../assets/images/memojis/tongue.png'
+import happy from '../../assets/images/memojis/happy.webp'
+import wink from '../../assets/images/memojis/wink.webp'
+import tongue from '../../assets/images/memojis/tongue.webp'
 
 import arrowDown from '../../assets/images/arrow-down.svg'
 
@@ -39,7 +39,7 @@ const Hero = () => {
         </Link>
 
         <Link
-          to="About"
+          to="Next"
           spy={true}
           smooth={true}
           duration={1000}

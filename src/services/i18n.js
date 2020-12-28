@@ -3,22 +3,22 @@ import { initReactI18next } from 'react-i18next'
 import LanguageDetector from 'i18next-browser-languagedetector'
 
 // Resume
-import ufpel from '../assets/images/resume/ufpel.png'
-import hut8 from '../assets/images/resume/hut8.png'
+import ufpel from '../assets/images/resume/ufpel.webp'
+import hut8 from '../assets/images/resume/hut8.webp'
 
 // Portfolio
-import hut8Desktop from '../assets/images/portfolio/hut8.png'
-import hut8Mobile from '../assets/images/portfolio/hut8-mobile.png'
-import vantumDesktop from '../assets/images/portfolio/vantum.png'
-import vantumMobile from '../assets/images/portfolio/vantum-mobile.png'
-import hubiaDesktop from '../assets/images/portfolio/hubia.png'
-import hubiaMobile from '../assets/images/portfolio/hubia-mobile.png'
-import hocDesktop from '../assets/images/portfolio/hoc.png'
-import hocMobile from '../assets/images/portfolio/hoc-mobile.png'
-import veritasDesktop from '../assets/images/portfolio/veritas.png'
-import veritasMobile from '../assets/images/portfolio/veritas-mobile.png'
-import leafpayDesktop from '../assets/images/portfolio/leafpay.png'
-import leafpayMobile from '../assets/images/portfolio/leafpay-mobile.png'
+import hut8Desktop from '../assets/images/portfolio/hut8.webp'
+import hut8Mobile from '../assets/images/portfolio/hut8-mobile.webp'
+import vantumDesktop from '../assets/images/portfolio/vantum.webp'
+import vantumMobile from '../assets/images/portfolio/vantum-mobile.webp'
+import hubiaDesktop from '../assets/images/portfolio/hubia.webp'
+import hubiaMobile from '../assets/images/portfolio/hubia-mobile.webp'
+import hocDesktop from '../assets/images/portfolio/hoc.webp'
+import hocMobile from '../assets/images/portfolio/hoc-mobile.webp'
+import veritasDesktop from '../assets/images/portfolio/veritas.webp'
+import veritasMobile from '../assets/images/portfolio/veritas-mobile.webp'
+import leafpayDesktop from '../assets/images/portfolio/leafpay.webp'
+import leafpayMobile from '../assets/images/portfolio/leafpay-mobile.webp'
 
 const resources = {
   pt: {

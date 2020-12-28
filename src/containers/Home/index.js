@@ -10,8 +10,8 @@ import Articles from '../../components/Articles'
 import Contact from '../../components/Contact'
 import Foot from '../../components/Foot'
 
-import Navbar from '../../components/Navbar'
 import About from '../../components/About'
+import Navbar from '../../components/Navbar'
 
 const Home = () => {
   return (
@@ -22,7 +22,9 @@ const Home = () => {
         </aside>
         <main>
           <Hero />
-          <About />
+          <div id="Next">
+            <About />
+          </div>
           <Resume />
           <Skills />
           <Portfolio />
