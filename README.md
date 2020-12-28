@@ -3,7 +3,7 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app) and is avaiable at https://jvwasquevite.com/.
 
 ## Layout
-Figma layout [avaiable here](https://www.figma.com/file/pMUBIGLHYHFXXrlWafPH3v/jvwasquevite).
+Figma layout [available here](https://www.figma.com/file/pMUBIGLHYHFXXrlWafPH3v/jvwasquevite).
 
 ## Features
 1. Multilingual website with [i18next package](https://www.i18next.com/)
