@@ -3,7 +3,12 @@
   display: none;
 }
 
+/* For mobile devices */
 @media (max-width: 480px) {
+  #About {
+    padding: 30px 0;
+  }
+
   #About .social {
     display: block;
   }

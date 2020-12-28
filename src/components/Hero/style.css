@@ -15,10 +15,23 @@
   animation: floating 1s infinite alternate;
 }
 
+#Hero .to-about {
+  display: none;
+}
+
+/* For mobile devices */
 @media (max-width: 480px) {
   #Hero {
     height: 90vh;
     margin-top: -110px;
+  }
+
+  #Hero .to-resume {
+    display: none;
+  }
+
+  #Hero .to-about {
+    display: block;
   }
 }
 

@@ -6,15 +6,11 @@ const LangSwitcher = () => {
 
   return (
     <div id="LangSwitcher">
-      <button
-        onClick={() =>
-          i18n.language === 'pt'
-            ? i18n.changeLanguage('en')
-            : i18n.changeLanguage('pt')
-        }
-      >
-        {i18n.language === 'pt' ? 'EN-US' : 'PT-BR'}
-      </button>
+      {i18n.language === 'pt' ? (
+        <button onClick={() => i18n.changeLanguage('en')}>EN-US</button>
+      ) : (
+        <button onClick={() => i18n.changeLanguage('pt')}>PT-BR</button>
+      )}
     </div>
   )
 }

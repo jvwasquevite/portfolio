@@ -45,9 +45,9 @@ const Portfolio = () => {
                 <h2>{item.header}</h2>
                 <div className="skills">
                   {item.skills.map((skill, key) => (
-                    <span className="skill" key={key}>
+                    <div className="skill" key={key}>
                       {skill}
-                    </span>
+                    </div>
                   ))}
                 </div>
                 <p className="secondary-text">{Parser(item.description)}</p>

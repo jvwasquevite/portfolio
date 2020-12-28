@@ -73,12 +73,14 @@ p.sub-header {
   font-size: 0.75em;
   text-transform: uppercase;
   color: var(--tertiary-color);
+  line-height: normal;
   letter-spacing: 3px;
   margin-bottom: 5px;
 }
 
 p.secondary-text {
   font-size: 0.9em;
+  line-height: normal;
 }
 
 button {
@@ -128,7 +130,7 @@ button {
 @media (max-width: 480px) {
   section {
     height: auto;
-    padding: 60px 0;
+    padding: 30px 0;
   }
   h1 {
     font-size: 2em;

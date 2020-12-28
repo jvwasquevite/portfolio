@@ -27,8 +27,25 @@ const Hero = () => {
     <section id="Hero">
       <div className="content">
         <img src={slides[currentSlide]} className="memoji" alt="Memojis" />
-        <Link to="Resume" spy={true} smooth={true} duration={1000}>
+
+        <Link
+          to="Resume"
+          spy={true}
+          smooth={true}
+          duration={1000}
+          className="to-resume"
+        >
           <img src={arrowDown} className="arrow-down" alt="Go to resume" />
+        </Link>
+
+        <Link
+          to="About"
+          spy={true}
+          smooth={true}
+          duration={1000}
+          className="to-about"
+        >
+          <img src={arrowDown} className="arrow-down" alt="Go to about" />
         </Link>
       </div>
     </section>

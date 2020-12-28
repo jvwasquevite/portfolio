@@ -1,7 +1,8 @@
 #Home {
   display: grid;
+  width: 1150px;
+  margin: 0 auto;
   grid-template-columns: 1fr 570px;
-  margin: 0 100px;
   gap: 100px;
 }
 
@@ -13,7 +14,8 @@
 @media (max-width: 480px) {
   #Home {
     display: block;
-    margin: 0 30px;
+    width: 100%;
+    padding: 0 30px;
   }
 
   #Home main #About {

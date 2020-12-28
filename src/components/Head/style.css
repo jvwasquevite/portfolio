@@ -14,6 +14,7 @@ header#Head {
   display: flex;
   margin-top: 20px;
 }
+
 /* For mobile devices */
 @media (max-width: 480px) {
   #Head {
@@ -27,9 +28,7 @@ header#Head {
     margin: 0 auto;
   }
 
-  #Head .about,
-  #Head .menu,
-  #Head .foot {
+  #Head .content {
     display: none;
   }
 }

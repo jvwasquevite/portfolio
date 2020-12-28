@@ -34,7 +34,7 @@ const Skills = () => {
           </div>
         )
       })}
-      <p>{Parser(t('skills.other'))}</p>
+      <p className="other">{Parser(t('skills.other'))}</p>
     </section>
   )
 }

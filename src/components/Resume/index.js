@@ -28,7 +28,7 @@ const Resume = () => {
       <div className="secondary">
         {t('resume.secondary', { returnObjects: true }).map((item, key) => {
           return (
-            <div className="container half" key={key}>
+            <div className="container" key={key}>
               <div className="content">
                 <p className="sub-header">{item.subheader}</p>
                 <h3>{item.header}</h3>

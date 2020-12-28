@@ -107,7 +107,7 @@ const resources = {
           {
             images: [`${hut8Desktop}`, `${hut8Mobile}`],
             subheader: 'React',
-            header: 'Hut8',
+            header: 'Empresa Júnior Hut8',
             skills: ['Hooks', 'Sass', 'CSS Flexbox', 'CSS Grid'],
             description: `Redesign de site institucional para a Empresa Júnior da Computação 
             da Universidade Federal de Pelotas. Desenvolvido em <b>React</b>, o projeto é <b>integrado 
@@ -149,7 +149,7 @@ const resources = {
             images: [`${hocDesktop}`, `${hocMobile}`],
             subheader: 'Wordpress',
             header: 'Hospital Odontológico Cetao',
-            skills: ['Wordpress', 'Inbound Marketing', 'Copywriting'],
+            skills: ['Wordpress', 'Inbound Marketing'],
             description: `Desenvolvimento de site institucional e landing pages focadas em <b>conversão de leads</b>
             para o Hospital Odontológico Cetao. Por meio da integração com o
             <a href="https://www.rdstation.com/" target="_blank" rel="noreferrer">RD Station</a>, os leads são
@@ -312,7 +312,7 @@ const resources = {
           {
             images: [`${hut8Desktop}`, `${hut8Mobile}`],
             subheader: 'React',
-            header: 'Hut8',
+            header: 'Empresa Júnior Hut8',
             skills: ['Hooks', 'Sass', 'CSS Flexbox', 'CSS Grid'],
             description: `Institutional website redesign for the Junior Computer Enterprise 
             of the Federal University of Pelotas. Developed with <b>React</b>, the project is <b>integrated 
@@ -354,7 +354,7 @@ const resources = {
             images: [`${hocDesktop}`, `${hocMobile}`],
             subheader: 'Wordpress',
             header: 'Cetao Dental Hospital',
-            skills: ['Wordpress', 'Inbound Marketing', 'Copywriting'],
+            skills: ['Wordpress', 'Inbound Marketing'],
             description: `Development of an institutional website and landing pages focused on <b>lead conversion</b>
             for the Cetao Dental Hospital. Through the integration with 
             <a href="https://www.rdstation.com/" target="_blank" rel="noreferrer">RD Station</a>, leads are
@@ -411,7 +411,7 @@ const resources = {
             header: 'Alegrete e Pelotas/RS',
           },
         ],
-        button: { name: 'View resume in PDF', url: '/resume.pdf' },
+        button: { name: 'View resume in PDF', url: '/curriculo.pdf' },
       },
       foot: {
         text: `Made with <a href="https://pt-br.reactjs.org/" target="_blank" rel="noreferrer">React</a>, lots of coffee and patience.`,
