@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.bb5f1d3d.chunk.css",
-    "main.js": "/portfolio/static/js/main.8fc76dc8.chunk.js",
-    "main.js.map": "/portfolio/static/js/main.8fc76dc8.chunk.js.map",
+    "main.css": "/portfolio/static/css/main.218f2743.chunk.css",
+    "main.js": "/portfolio/static/js/main.098ab79e.chunk.js",
+    "main.js.map": "/portfolio/static/js/main.098ab79e.chunk.js.map",
     "runtime-main.js": "/portfolio/static/js/runtime-main.8fed2963.js",
     "runtime-main.js.map": "/portfolio/static/js/runtime-main.8fed2963.js.map",
-    "static/js/2.470c80c1.chunk.js": "/portfolio/static/js/2.470c80c1.chunk.js",
-    "static/js/2.470c80c1.chunk.js.map": "/portfolio/static/js/2.470c80c1.chunk.js.map",
+    "static/js/2.02ac096e.chunk.js": "/portfolio/static/js/2.02ac096e.chunk.js",
+    "static/js/2.02ac096e.chunk.js.map": "/portfolio/static/js/2.02ac096e.chunk.js.map",
     "index.html": "/portfolio/index.html",
-    "static/css/main.bb5f1d3d.chunk.css.map": "/portfolio/static/css/main.bb5f1d3d.chunk.css.map",
-    "static/js/2.470c80c1.chunk.js.LICENSE.txt": "/portfolio/static/js/2.470c80c1.chunk.js.LICENSE.txt",
+    "static/css/main.218f2743.chunk.css.map": "/portfolio/static/css/main.218f2743.chunk.css.map",
+    "static/js/2.02ac096e.chunk.js.LICENSE.txt": "/portfolio/static/js/2.02ac096e.chunk.js.LICENSE.txt",
     "static/media/arrow-down.3f9d2213.svg": "/portfolio/static/media/arrow-down.3f9d2213.svg",
     "static/media/arrow-right.eaa81419.svg": "/portfolio/static/media/arrow-right.eaa81419.svg",
     "static/media/behance.304d93a9.svg": "/portfolio/static/media/behance.304d93a9.svg",
@@ -27,7 +27,7 @@
     "static/media/linkedin.5135e6c2.svg": "/portfolio/static/media/linkedin.5135e6c2.svg",
     "static/media/logo.1942e11c.svg": "/portfolio/static/media/logo.1942e11c.svg",
     "static/media/tongue.93d2f6f6.png": "/portfolio/static/media/tongue.93d2f6f6.png",
-    "static/media/ufpel.3aa360a0.png": "/portfolio/static/media/ufpel.3aa360a0.png",
+    "static/media/ufpel.4182ea0c.png": "/portfolio/static/media/ufpel.4182ea0c.png",
     "static/media/vantum-mobile.d2985f53.png": "/portfolio/static/media/vantum-mobile.d2985f53.png",
     "static/media/vantum.64fef8d2.png": "/portfolio/static/media/vantum.64fef8d2.png",
     "static/media/veritas-mobile.556ba2de.png": "/portfolio/static/media/veritas-mobile.556ba2de.png",
@@ -37,8 +37,8 @@
   },
   "entrypoints": [
     "static/js/runtime-main.8fed2963.js",
-    "static/js/2.470c80c1.chunk.js",
-    "static/css/main.bb5f1d3d.chunk.css",
-    "static/js/main.8fc76dc8.chunk.js"
+    "static/js/2.02ac096e.chunk.js",
+    "static/css/main.218f2743.chunk.css",
+    "static/js/main.098ab79e.chunk.js"
   ]
 }
