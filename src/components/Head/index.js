@@ -7,11 +7,13 @@ import SocialIcons from '../helpers/SocialIcons'
 import LangSwitcher from '../helpers/LangSwitcher'
 
 import logo from '../../assets/images/logo.svg'
+import Logo from './Logo'
 
 const Head = () => {
   return (
     <header id="Head">
-      <img src={logo} alt="logo" className="logo" />
+      <Logo />
+      {/* <img src={logo} alt="logo" className="logo" /> */}
       <div className="content">
         <div className="about">
           <About />
