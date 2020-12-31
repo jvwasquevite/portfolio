@@ -5,6 +5,11 @@ header#Head {
   top: 0;
 }
 
+#Head .logo {
+  max-height: 60px;
+  margin-bottom: 15px;
+}
+
 #Head .foot {
   display: flex;
   margin-top: 20px;
@@ -16,6 +21,11 @@ header#Head {
     position: static;
     justify-content: flex-end;
     height: 110px;
+  }
+
+  #Head .logo {
+    max-height: 50px;
+    margin: 0 auto;
   }
 
   #Head .content {

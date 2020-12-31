@@ -6,14 +6,12 @@ import Menu from '../helpers/Menu'
 import SocialIcons from '../helpers/SocialIcons'
 import LangSwitcher from '../helpers/LangSwitcher'
 
-import logo from '../../assets/images/logo.svg'
-import Logo from './Logo'
+import logo from '../../assets/images/logo.gif'
 
 const Head = () => {
   return (
     <header id="Head">
-      <Logo />
-      {/* <img src={logo} alt="logo" className="logo" /> */}
+      <img src={logo} alt="logo" className="logo" />
       <div className="content">
         <div className="about">
           <About />
