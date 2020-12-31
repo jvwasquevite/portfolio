@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/static/css/main.daa8c20b.chunk.css",
-    "main.js": "/static/js/main.2516ad5d.chunk.js",
-    "main.js.map": "/static/js/main.2516ad5d.chunk.js.map",
+    "main.css": "/static/css/main.3490f044.chunk.css",
+    "main.js": "/static/js/main.44eb3cdf.chunk.js",
+    "main.js.map": "/static/js/main.44eb3cdf.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.2fd7dc15.js",
     "runtime-main.js.map": "/static/js/runtime-main.2fd7dc15.js.map",
     "static/js/2.69d00575.chunk.js": "/static/js/2.69d00575.chunk.js",
     "static/js/2.69d00575.chunk.js.map": "/static/js/2.69d00575.chunk.js.map",
     "index.html": "/index.html",
-    "static/css/main.daa8c20b.chunk.css.map": "/static/css/main.daa8c20b.chunk.css.map",
+    "static/css/main.3490f044.chunk.css.map": "/static/css/main.3490f044.chunk.css.map",
     "static/js/2.69d00575.chunk.js.LICENSE.txt": "/static/js/2.69d00575.chunk.js.LICENSE.txt",
     "static/media/0.bd760bab.webp": "/static/media/0.bd760bab.webp",
     "static/media/1.92ad6cc6.webp": "/static/media/1.92ad6cc6.webp",
@@ -64,7 +64,7 @@
     "static/media/leafpay-mobile.9c368027.webp": "/static/media/leafpay-mobile.9c368027.webp",
     "static/media/leafpay.f3fe1f64.webp": "/static/media/leafpay.f3fe1f64.webp",
     "static/media/linkedin.5135e6c2.svg": "/static/media/linkedin.5135e6c2.svg",
-    "static/media/logo.057f7a8b.svg": "/static/media/logo.057f7a8b.svg",
+    "static/media/logo.d522f623.gif": "/static/media/logo.d522f623.gif",
     "static/media/tongue.69b254d0.webp": "/static/media/tongue.69b254d0.webp",
     "static/media/ufpel.5e9644b4.webp": "/static/media/ufpel.5e9644b4.webp",
     "static/media/vantum-mobile.1bdb2885.webp": "/static/media/vantum-mobile.1bdb2885.webp",
@@ -77,7 +77,7 @@
   "entrypoints": [
     "static/js/runtime-main.2fd7dc15.js",
     "static/js/2.69d00575.chunk.js",
-    "static/css/main.daa8c20b.chunk.css",
-    "static/js/main.2516ad5d.chunk.js"
+    "static/css/main.3490f044.chunk.css",
+    "static/js/main.44eb3cdf.chunk.js"
   ]
 }
