@@ -24,7 +24,21 @@
 }
 
 #Navbar .menu-switcher {
+  display: flex;
+  align-items: center;
   padding-left: 15px;
+}
+
+#Navbar .arrow {
+  max-height: 5px;
+  margin-left: 5px;
+}
+
+#Navbar .open {
+  -moz-transform: scaleY(-1);
+  -o-transform: scaleY(-1);
+  -webkit-transform: scaleY(-1);
+  transform: scaleY(-1);
 }
 
 /* For smaller devices */

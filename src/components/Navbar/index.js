@@ -1,11 +1,15 @@
-import React, { useState } from 'react'
+import React, { useContext, useState } from 'react'
 import './style.css'
 
+import { MenuContext } from '../../services/contexts/MenuContext'
 import LangSwitcher from '../helpers/LangSwitcher'
 import Menu from '../helpers/Menu'
 
+import navArrow from '../../assets/images/nav-arrow.svg'
+
 const Navbar = () => {
   const [menu, setMenu] = useState(false)
+  const { active } = useContext(MenuContext)
 
   return (
     <div id="Navbar">
@@ -20,7 +24,17 @@ const Navbar = () => {
             className="menu-switcher button"
             onClick={() => (menu ? setMenu(false) : setMenu(true))}
           >
-            {menu ? 'Fechar menu' : 'Abrir menu'}
+            {menu ? (
+              <>
+                {active}{' '}
+                <img src={navArrow} className="arrow open" alt="Close menu" />
+              </>
+            ) : (
+              <>
+                {active}{' '}
+                <img src={navArrow} className="arrow" alt="Open menu" />
+              </>
+            )}
           </div>
         </div>
         <div className="lang-switcher">

@@ -13,9 +13,11 @@ import Foot from '../../components/Foot'
 import About from '../../components/About'
 import Navbar from '../../components/Navbar'
 
+import { MenuContextProvider } from '../../services/contexts/MenuContext'
+
 const Home = () => {
   return (
-    <>
+    <MenuContextProvider>
       <main id="Home">
         <aside>
           <Head />
@@ -34,7 +36,7 @@ const Home = () => {
         </main>
       </main>
       <Navbar />
-    </>
+    </MenuContextProvider>
   )
 }
 

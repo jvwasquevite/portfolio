@@ -2,11 +2,11 @@ import i18next from 'i18next'
 import { initReactI18next } from 'react-i18next'
 import LanguageDetector from 'i18next-browser-languagedetector'
 
-// Resume
+// Resume images
 import ufpel from '../assets/images/resume/ufpel.webp'
 import hut8 from '../assets/images/resume/hut8.webp'
 
-// Portfolio
+// Portfolio images
 import hut8Desktop from '../assets/images/portfolio/hut8.webp'
 import hut8Mobile from '../assets/images/portfolio/hut8-mobile.webp'
 import vantumDesktop from '../assets/images/portfolio/vantum.webp'
@@ -87,7 +87,7 @@ const resources = {
             level: '40%',
           },
           {
-            subheader: 'Design UI/UX',
+            subheader: 'Design UI',
             header: 'Figma e Adobe XD',
             secondarytext: 'Intermediário a avançado',
             level: '70%',
@@ -125,16 +125,6 @@ const resources = {
             utiliza <b>recursos visuais animados em SVG</b> e <b>módulo de chatbot</b> integrado com um funil de vendas.`,
             button: ['Ver projeto', 'https://vantum.com.br/'],
           },
-          // {
-          //   subheader: 'React',
-          //   header: 'Painel administrativo Hut8',
-          //   skills: ['Autenticação', 'Axios', 'Hooks', 'Context', 'Sass'],
-          //   description: `Desenvolvimento de sistema administrativo para a Empresa Júnior da Computação
-          // da Universidade Federal de Pelotas. Desenvolvido em <b>React</b>, o projeto permite gerir os
-          // membros e os projetos da empresa em um <b>CRM próprio</b>, além da criação de um <b>painel administrativo
-          // direcionado para os clientes</b>.`,
-          //   button: null,
-          // },
           {
             images: [`${hubiaDesktop}`, `${hubiaMobile}`],
             subheader: 'Wordpress',
@@ -279,7 +269,7 @@ const resources = {
         content: [
           {
             subheader: 'Frontend',
-            header: 'React e Vue.js',
+            header: 'React and Vue.js',
             secondarytext: 'Intermediate to advanced',
             level: '80%',
           },
@@ -290,8 +280,8 @@ const resources = {
             level: '40%',
           },
           {
-            subheader: 'UI/UX Design',
-            header: 'Figma e Adobe XD',
+            subheader: 'UI Design',
+            header: 'Figma and Adobe XD',
             secondarytext: 'Intermediate to advanced',
             level: '70%',
           },
@@ -303,7 +293,7 @@ const resources = {
           },
         ],
         other: `<b>Other skills:</b> Wordpress/Landing Pages, Copywriting, SEO, 
-        Inbound Marketing, Illustrator e Photoshop.`,
+        Inbound Marketing, Illustrator and Photoshop.`,
       },
       portfolio: {
         content: [
@@ -328,16 +318,6 @@ const resources = {
             has <b>animated visuals resources in SVG</b> and <b>chatbot module</b> integrated with a sales funnel.`,
             button: ['See project', 'https://vantum.com.br/'],
           },
-          // {
-          //   subheader: 'React',
-          //   header: 'Painel administrativo Hut8',
-          //   skills: ['Autenticação', 'Axios', 'Hooks', 'Context', 'Sass'],
-          //   description: `Desenvolvimento de sistema administrativo para a Empresa Júnior da Computação
-          // da Universidade Federal de Pelotas. Desenvolvido em <b>React</b>, o projeto permite gerir os
-          // membros e os projetos da empresa em um <b>CRM próprio</b>, além da criação de um <b>painel administrativo
-          // direcionado para os clientes</b>.`,
-          //   button: null,
-          // },
           {
             images: [`${hubiaDesktop}`, `${hubiaMobile}`],
             subheader: 'Wordpress',
@@ -406,7 +386,7 @@ const resources = {
           },
           {
             subheader: 'Somewhere between',
-            header: 'Alegrete e Pelotas/RS',
+            header: 'Alegrete and Pelotas/RS',
           },
         ],
         button: { name: 'View resume in PDF', url: '/curriculo.pdf' },
