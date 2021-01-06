@@ -17,7 +17,6 @@ const Menu = () => {
       <nav>
         <ul>
           {menu.map((item, key) => {
-            const name = item.name
             return (
               <li key={key}>
                 <Link
