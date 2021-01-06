@@ -24,7 +24,6 @@ const Menu = () => {
                   to={item.path}
                   spy={true}
                   smooth={true}
-                  offset={-500}
                   duration={1000}
                   onSetActive={() => setActive(item.name)}
                   onSetInactive={() => key === 0 && setActive('Menu')}
