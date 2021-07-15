@@ -1,23 +1,104 @@
-# Personal portfólio
+<br />
+<p align="center">
+  <a href="https://github.com/jvwasquevite/portfolio">
+    <img src="https://raw.githubusercontent.com/jvwasquevite/readme/main/logo.png?token=AMCADBC6EWPA6XJUKSPKSHLA7FU6W" alt="Logo">
+  </a>
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app) and is avaiable at https://jvwasquevite.com/.
+  <h3 align="center">Portfolio</h3>
 
-## Layout
-Figma layout [available here](https://www.figma.com/file/pMUBIGLHYHFXXrlWafPH3v/jvwasquevite).
+  <p align="center">
+    Personal portfolio developed with React
+    <br />
+    <a href="https://jvwasquevite.com/">View Demo</a>
+    ·
+    <a href="https://github.com/jvwasquevite/portfolio/issues">Report Bug</a>
+    ·
+    <a href="https://github.com/jvwasquevite/portfolio/issues">Request Feature</a>
+    ·
+    <a href="https://github.com/jvwasquevite?tab=repositories">More Projects</a>
+  </p>
+</p>
 
-## Features
-1. Multilingual website with [i18next package](https://www.i18next.com/)
-2. Scrolling effects with [react-scroll](https://www.npmjs.com/package/react-scroll)
-3. Integration with [Medium API](https://github.com/Medium/medium-api-docs)
+<!-- made at screely.com, with: shadow on, plain regular window, no background, and 80x100px padding -->
+<p align="center">
+<img src="https://i.imgur.com/lClrmsg.png" alt="project_title">
+</p>
 
-## First steps
+## About The Project
 
-In the project directory, you can run:
+This project was developed with React, deployed at [jvwasquevite.com](https://jvwasquevite.com/), with multilinguage support, and integration with externals APIs.
 
-### `npm start`
+### Built With
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+* [Create React App](https://github.com/facebook/create-react-app)
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+### Main Features
+
+* [i18next package](https://www.i18next.com/) for multilingual support
+* [react-scroll](https://www.npmjs.com/package/react-scroll) for scrolling effects
+
+### More Information
+
+* Figma layout [avaiable here](https://www.figma.com/file/pMUBIGLHYHFXXrlWafPH3v/jvwasquevite)
+
+### Directory Structure
+
+```
+src
+├── assets
+|   └── images
+├── components
+│   └── helpers
+├── containers
+├── services
+│   └── contexts
+|   └── api.js
+├── App.js
+├── global.css
+└── routes.js
+```
+
+
+## Getting Started
+
+These instructions will get you a copy of the project up and running on your local machine for development and testing purposes.
+
+### Prerequisites
+
+* [Node.js](https://nodejs.org/en/) runtime builder
+* [Yarn](https://classic.yarnpkg.com/en/) package manager
+
+### Installation
+
+1. Clone this repository:
+   ```sh
+   git clone https://github.com/jvwasquevite/portfolio.git
+   ```
+2. Install packages with Yarn:
+   ```sh
+   yarn install
+   ```
+
+## Contributing
+
+1. Fork the Project
+2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to the Branch (`git push origin feature/AmazingFeature`)
+5. Open a Pull Request
+
+## License
+
+Distributed under the MIT License.
+
+## Acknowledgements
+
+* How to create a multilanguage React project
+* How to deploy an application using github-pages
+* How to connect external APIs with axios
+* How to create a mobile first application
+* How to create UI layouts and prototypes on Figma
+
+## Get in touch with me
+
+Get more information about me at [jvwasquevite.com](https://jvwasquevite.com/) or email me at [joao@jvwasquevite.com](mailto:joao@jvwasquevite.com).
