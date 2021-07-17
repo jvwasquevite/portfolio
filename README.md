@@ -9,8 +9,9 @@
   <p align="center">
     Personal portfolio developed with React
     <br />
-    <a href="https://jvwasquevite.com/">View Demo</a>
-    ·
+    <a href="https://jvwasquevite.com/" target="_blank"><strong>Access website »</strong></a>
+    <br />
+    <br />
     <a href="https://github.com/jvwasquevite/portfolio/issues">Report Bug</a>
     ·
     <a href="https://github.com/jvwasquevite/portfolio/issues">Request Feature</a>
@@ -98,6 +99,15 @@ Distributed under the MIT License.
 * How to connect external APIs with axios
 * How to create a mobile first application
 * How to create UI layouts and prototypes on Figma
+
+## Future improvements
+
+- [ ] Integrate with [GitHub GraphQL API](https://docs.github.com/pt/graphql) using [Apollo](https://www.apollographql.com/) to return pinned repositories
+- [ ] Integrate with [Notion API](https://developers.notion.com/) for using Notion as CMS
+- [ ] Create swipe feature to portfolio items on mobile view
+- [ ] Allow projects filtering by tags
+- [ ] Improve integration with Google Analytics, with custom events tracking
+- [ ] Improve page SEO 
 
 ## Get in touch with me
 
