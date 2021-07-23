@@ -3,7 +3,7 @@ import './style.css'
 
 import About from '../About'
 import Menu from '../helpers/Menu'
-import SocialIcons from '../helpers/SocialIcons'
+import SocialButtons from '../helpers/SocialButtons'
 import LangSwitcher from '../helpers/LangSwitcher'
 
 import logo from '../../assets/images/logo.gif'
@@ -20,7 +20,7 @@ const Head = () => {
           <Menu />
         </div>
         <div className="foot">
-          <SocialIcons />
+          <SocialButtons />
           <LangSwitcher />
         </div>
       </div>

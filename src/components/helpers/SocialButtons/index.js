@@ -35,9 +35,9 @@ const social = [
   },
 ]
 
-const SocialIcons = () => {
+const SocialButtons = () => {
   return (
-    <div id="SocialIcons">
+    <div id="SocialButtons">
       {social.map((icon, key) => {
         return (
           <a
@@ -55,4 +55,4 @@ const SocialIcons = () => {
   )
 }
 
-export default SocialIcons
+export default SocialButtons

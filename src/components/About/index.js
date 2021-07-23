@@ -4,7 +4,7 @@ import './style.css'
 import Parser from 'html-react-parser'
 import { useTranslation } from 'react-i18next'
 
-import SocialIcons from '../helpers/SocialIcons'
+import SocialButtons from '../helpers/SocialButtons'
 
 const About = () => {
   const { t } = useTranslation()
@@ -15,7 +15,7 @@ const About = () => {
       <h1>{Parser(t('head.header'))}</h1>
       <p>{Parser(t('head.content'))}</p>
       <div className="social">
-        <SocialIcons />
+        <SocialButtons />
       </div>
     </div>
   )
