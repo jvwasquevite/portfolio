@@ -26,13 +26,11 @@ const resources = {
       head: {
         subheader: 'Sobre mim',
         header: `Prazer, sou o <b>João</b>.`,
-        content: `Graduando em Ciência da Computação pela
-        <a href="https://portal.ufpel.edu.br/" target="_blank" rel="noreferrer">
-        Universidade Federal de Pelotas</a>, atuo como desenvolvedor frontend
-        e diretor presidente na <a href="http://hut8.com.br/" target="_blank" rel="noreferrer">
-        Hut8</a>. Sou apaixonado por tudo relacionado a inovação tecnológica,
-        empreendedorismo e processos criativos: desde o design até a
-        programação.`,
+        content: `Estudante de Ciência da Computação pela 
+        <a href="https://portal.ufpel.edu.br/" target="_blank" rel="noreferrer">Universidade Federal de Pelotas</a>. 
+        Desenvolvedor web estudando engenharia de software no tempo livre. 
+        Apaixonado por ciência de dados, inovação tecnológica, empreendedorismo e 
+        processos criativos: desde o design até a programação.`,
         menu: [
           { path: 'Resume', name: 'Resumo' },
           { path: 'Skills', name: 'Skills' },
@@ -207,8 +205,7 @@ const resources = {
           },
           {
             name: 'Ver layout no Figma',
-            url:
-              'https://www.figma.com/file/pMUBIGLHYHFXXrlWafPH3v/jvwasquevite',
+            url: 'https://www.figma.com/file/pMUBIGLHYHFXXrlWafPH3v/jvwasquevite',
           },
         ],
       },
@@ -220,12 +217,11 @@ const resources = {
       head: {
         subheader: 'About me',
         header: `What's up? I'm <b>João</b>.`,
-        content: `Graduating in Computer Science at
-        <a href="https://portal.ufpel.edu.br/" target="_blank" rel="noreferrer">
-        Federal University of Pelotas</a>, I work as frontend developer and president at
-        <a href="http://hut8.com.br/" target="_blank" rel="noreferrer">
-        Hut8</a>. I'm passionate about everything related to technological innovation, 
-        entrepreneurship and creative processes: from design to programming.`,
+        content: `Computer Science student at  
+        <a href="https://portal.ufpel.edu.br/" target="_blank" rel="noreferrer">Federal University of Pelotas</a>. 
+        Web developer studying software engineering in free time. 
+        Passionate about data science, technological innovation, entrepreneurship and 
+        creative processes: from design to programming.`,
         menu: [
           { path: 'Resume', name: 'Resume' },
           { path: 'Skills', name: 'Skills' },
@@ -400,8 +396,7 @@ const resources = {
           },
           {
             name: 'See layout on Figma',
-            url:
-              'https://www.figma.com/file/pMUBIGLHYHFXXrlWafPH3v/jvwasquevite',
+            url: 'https://www.figma.com/file/pMUBIGLHYHFXXrlWafPH3v/jvwasquevite',
           },
         ],
       },
