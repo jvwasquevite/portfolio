@@ -7,8 +7,10 @@ import Doce22 from './containers/Doce22'
 const Routes = () => {
   return (
     <BrowserRouter>
-      <Route component={Home} exact path="/" />
-      <Route component={Doce22} exact path="/doce22" />
+      <Switch>
+        <Route component={Home} exact path="/" />
+        <Route component={Doce22} exact path="/doce22" />
+      </Switch>
     </BrowserRouter>
   )
 }

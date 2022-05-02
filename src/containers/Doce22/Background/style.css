@@ -23,10 +23,6 @@
   --background-image: url(https://images.genius.com/78544d5dc557cc9b716e582bc85553eb.1000x1000x1.png);
 }
 
-body {
-  background: black !important;
-}
-
 .glitch {
   position: absolute;
   width: var(--glitch-width);
