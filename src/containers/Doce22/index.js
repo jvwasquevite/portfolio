@@ -49,7 +49,7 @@ const Doce22 = () => {
             </div>
             <div className="icon">
               <a
-                href="https://twitter.com/jvwasquevite"
+                href="https://twitter.com/jvwasquevite/"
                 target="_blank"
                 rel="noreferrer"
               >
