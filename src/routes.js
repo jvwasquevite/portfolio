@@ -1,17 +1,17 @@
 import React from 'react'
-import { HashRouter as Router, Route, Switch } from 'react-router-dom'
+import { BrowserRouter, Route, Switch } from 'react-router-dom'
 
 import Home from './containers/Home'
 import Doce22 from './containers/Doce22'
 
 const Routes = () => {
   return (
-    <Router basename={process.env.PUBLIC_URL}>
+    <BrowserRouter>
       <Switch>
-        <Route component={Home} exact path="/" />
-        <Route component={Doce22} exact path="/doce22" />
+        <Route exact path="/" component={Home} />
+        <Route exact path="/doce22" component={Doce22} />
       </Switch>
-    </Router>
+    </BrowserRouter>
   )
 }
 
