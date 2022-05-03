@@ -26,7 +26,7 @@ const Doce22 = () => {
         <div className="content">
           <CountDownDaily
             className="countdown"
-            endDate={'2022-06-11'}
+            endDate={'2022-05-10'}
             operator=":"
           />
           <h3 className="coming-soon">Coming Soon</h3>
