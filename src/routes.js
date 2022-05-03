@@ -9,7 +9,7 @@ const Routes = () => {
     <Router basename={process.env.PUBLIC_URL}>
       <Switch>
         <Route component={Home} exact path="/" />
-        <Route component={Doce22} exact path="/doce22" />
+        <Route component={Doce22} exact path="/#/doce22" />
       </Switch>
     </Router>
   )
