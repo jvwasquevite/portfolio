@@ -3,8 +3,8 @@
 .landing {
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: space-between;
+  align-items: center;
   text-align: center;
   height: 100vh;
   padding: 50px 0;
@@ -24,28 +24,66 @@
   margin-bottom: -20px;
 }
 
-/* Content styles */
-.landing .content .countdown {
-  font-family: 'Poppins';
-  text-transform: uppercase;
-  font-weight: 700;
-  font-size: 60px;
-  color: #fff;
-  margin-bottom: -10px;
-}
-
-.landing .content .coming-soon {
+.landing .head .logo p {
   font-family: 'Poppins';
   text-transform: uppercase;
   font-weight: 600;
-  font-size: 20px;
-  opacity: 0.7;
+  font-size: 16px;
+  margin-top: -20px;
+  color: white;
+  opacity: 0.8;
+}
+
+/* Content styles */
+.landing .content .open-bar {
+  margin-bottom: 30px;
+}
+
+.landing .content .open-bar h3 {
+  font-family: 'Poppins';
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 16px;
+  margin-bottom: 2px;
+}
+
+.landing .content .open-bar h1 {
+  font-family: 'Poppins';
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 65px;
+  margin-bottom: -2px;
+}
+
+.landing .content .open-bar p {
+  font-family: 'Poppins';
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 14px;
+  color: #fff;
+}
+
+.landing .content .countdown p {
+  font-family: 'Poppins';
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 50px;
+  color: #fff;
+  margin: -10px 0;
+}
+
+.landing .content .countdown h3 {
+  font-family: 'Poppins';
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 14px;
 }
 
 /* Foot styles */
 .landing .foot {
   padding-top: 20px;
 }
+
 .landing .foot .social {
   display: flex;
   flex-direction: row;
@@ -174,13 +212,26 @@
     font-size: 50px;
   }
 
-  .landing .content .countdown {
+  .landing .content .countdown p {
     font-weight: 700;
-    font-size: 32px;
+    font-size: 30px;
+    margin-bottom: -3px;
+  }
+
+  .landing .content .countdown h3 {
+    font-size: 12px;
+  }
+
+  .landing .content .open-bar h1 {
+    font-size: 50px;
     margin-bottom: 0px;
   }
 
-  .landing .content .coming-soon {
-    font-size: 15px;
+  .landing .content .open-bar h3 {
+    font-size: 14px;
+  }
+
+  .landing .content .open-bar p {
+    font-size: 12px;
   }
 }

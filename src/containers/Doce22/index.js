@@ -24,12 +24,20 @@ const Doce22 = () => {
         </div>
 
         <div className="content">
-          <CountDownDaily
-            className="countdown"
-            endDate={'2022-05-10'}
-            operator=":"
-          />
-          <h3 className="coming-soon">Coming Soon</h3>
+          <div className="open-bar">
+            <h3>Hype Pub • Pelotas/RS</h3>
+            <h1>Open Bar</h1>
+            <p>Cerveja & Vodka com Energético/Kit</p>
+          </div>
+          <div className="countdown">
+            <h3>Faltam</h3>
+            <CountDownDaily
+              className="countdown"
+              endDate={'2022-05-10'}
+              operator=":"
+            />
+            <h3>Para a abertura das vendas</h3>
+          </div>
         </div>
 
         <div className="foot">
