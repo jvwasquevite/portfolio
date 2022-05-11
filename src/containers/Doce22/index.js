@@ -2,75 +2,36 @@ import React from 'react'
 import Background from './Background'
 import './style.css'
 
-import logo from '../../assets/images/logo.svg'
-
-import { CountDownDaily } from '@nilevia/count-down-timer-react'
-import '@nilevia/count-down-timer-react/dist/index.css'
+import Head from './Head'
+import Foot from './Foot'
+import Ticket from './Ticket'
+import Accordeon from './Accordeon'
+import ArrowDown from './ArrowDown'
+import Hero from './Hero'
+import Information from './Information'
 
 const Doce22 = () => {
   return (
-    <>
+    <div className="Doce22">
       <Background />
-      <div className="landing">
-        <div className="head">
-          <img src={logo} className="jvwasquevite" alt="Logo" />
-          <div className="logo">
-            <h3>Meus</h3>
-            <div class="glitch-text">
-              Doce 22
-              <div class="glitch-text__clip">Doce 22</div>
-            </div>
-          </div>
-        </div>
-
-        <div className="content">
-          <div className="open-bar">
-            <h3>Hype Pub • Pelotas/RS</h3>
-            <h1>Open Bar</h1>
-            <p>Cerveja & Vodka com Energético/Kit</p>
-          </div>
-          <div className="countdown">
-            <h3>Faltam</h3>
-            <CountDownDaily
-              className="countdown"
-              endDate={'2022-05-10'}
-              operator=":"
-            />
-            <h3>Para a abertura das vendas</h3>
-          </div>
-        </div>
-
-        <div className="foot">
-          <div className="social">
-            <p>more info on</p>
-            <div className="icon">
-              <a
-                href="https://www.instagram.com/jvwasquevite/"
-                target="_blank"
-                rel="noreferrer"
-              >
-                <img
-                  src="https://cdn4.iconfinder.com/data/icons/social-media-black-white-2/600/Instagram_glyph_svg-512.png"
-                  alt="Instagram"
-                />
-              </a>
-            </div>
-            <div className="icon">
-              <a
-                href="https://twitter.com/jvwasquevite/"
-                target="_blank"
-                rel="noreferrer"
-              >
-                <img
-                  src="https://cdn3.iconfinder.com/data/icons/social-media-black-white-2/512/BW_Twitter_glyph_svg-512.png"
-                  alt="Twitter"
-                />
-              </a>
-            </div>
-          </div>
-        </div>
+      <div className="section full-screen">
+        <Head />
+        <Hero />
+        <ArrowDown to="info" title="Mais informações" />
       </div>
-    </>
+      <div className="section full-screen" id="info">
+        <Information />
+        <ArrowDown to="ticket" title="Comprar ingressos" />
+      </div>
+      <div className="section full-screen" id="ticket">
+        <Ticket />
+        <ArrowDown to="faq" title="Perguntas frequentes" />
+      </div>
+      <div className="section auto" id="faq">
+        <Accordeon />
+        <Foot />
+      </div>
+    </div>
   )
 }
 

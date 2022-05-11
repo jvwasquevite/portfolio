@@ -1,0 +1,138 @@
+.Ticket {
+  width: 250px;
+  border-radius: 3px;
+  box-shadow: 0px 4px 0 #9a9d9c;
+}
+
+.Ticket .ticket-head {
+  background: white;
+  text-align: left;
+  border-radius: 3px 3px 0 0;
+  padding: 15px;
+}
+
+.Ticket .ticket-head h3 {
+  color: #333;
+}
+
+.Ticket .ticket-head span {
+  display: block;
+  font-family: 'Poppins' !important;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 10px;
+  color: #999;
+}
+
+.Ticket img {
+  max-width: 250px;
+  margin-bottom: -5px;
+}
+
+.Ticket .ticket-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: white;
+  padding: 15px 15px 5px 15px;
+}
+
+.Ticket .ticket-content .barcode {
+  background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAF4AAAABCAYAAABXChlMAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAAYdEVYdFNvZnR3YXJlAHBhaW50Lm5ldCA0LjAuOWwzfk4AAACPSURBVChTXVAJDsMgDOsrVpELiqb+/4c0DgStQ7JMYogNh2gdvg5VfXFCRIZaC6BOtnoNFpvaumNmwb/71Frrm8XvgYkker1/g9WzMOsohaOGNziRs5inDsAn8yEPengTapJ5bmdZ2Yv7VvfPN6AH2NJx7nOWPTf1/78hoqgxhzw3ZqYG1Dr/9ur3y8vMxgNZhcAUnR4xKgAAAABJRU5ErkJggg==);
+  background-repeat: repeat-y;
+  width: 85px;
+  height: 25px;
+}
+
+.Ticket .ticket-content .description {
+  font-family: 'Poppins' !important;
+  color: #333;
+  text-align: right;
+}
+
+.Ticket .ticket-content .description span {
+  display: block;
+  font-size: 10px;
+  color: #999;
+  margin-bottom: -8px;
+}
+
+.Ticket .ticket-form {
+  display: flex;
+  background: white;
+  color: #333;
+  padding: 10px;
+  border-radius: 0 0 3px 3px;
+}
+
+.Ticket .ticket-form form {
+  display: flex;
+}
+
+.Ticket .ticket-form form input[type='text'] {
+  background: #e8e8e8;
+  padding: 5px 10px;
+  border-radius: 3px 0 0 3px;
+  width: 100%;
+  border: 0;
+}
+
+.Ticket .ticket-form form input[type='submit'] {
+  background: #e8e8e8;
+  border: 0;
+  border-radius: 0px 3px 3px 0px;
+  padding: 5px 10px;
+  font-weight: 500;
+  color: #333;
+  cursor: pointer;
+}
+
+.Ticket .rip {
+  height: 20px;
+  margin: 0 10px;
+  background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAYAAAACCAYAAAB7Xa1eAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAAYdEVYdFNvZnR3YXJlAHBhaW50Lm5ldCA0LjAuOWwzfk4AAAAaSURBVBhXY5g7f97/2XPn/AcCBmSMQ+I/AwB2eyNBlrqzUQAAAABJRU5ErkJggg==);
+  background-size: 4px 2px;
+  background-repeat: repeat-x;
+  background-position: center;
+  background-color: white;
+  position: relative;
+  box-shadow: 0 1px 0 0 #fff, 0 -1px 0 0 #fff;
+}
+.Ticket .rip:before,
+.Ticket .rip:after {
+  content: '';
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  top: 50%;
+  transform: translate(-50%, -50%) rotate(45deg);
+  border: 5px solid transparent;
+  border-top-color: #fff;
+  border-right-color: #fff;
+  border-radius: 100%;
+  pointer-events: none;
+}
+.Ticket .rip:before {
+  left: -10px;
+}
+.Ticket .rip:after {
+  transform: translate(-50%, -50%) rotate(225deg);
+  right: -40px;
+}
+
+.Ticket .invalid-passcode {
+  background: white;
+  padding: 10px 10px 0px 10px;
+}
+
+.Ticket .invalid-passcode span {
+  display: block;
+  width: 100%;
+  background: rgb(210, 0, 0);
+  font-family: 'Poppins';
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 10px;
+  border-radius: 3px;
+  padding: 5px;
+}

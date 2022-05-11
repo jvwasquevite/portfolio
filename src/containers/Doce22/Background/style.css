@@ -24,7 +24,7 @@
 }
 
 .glitch {
-  position: absolute;
+  position: fixed;
   width: var(--glitch-width);
   height: var(--glitch-height);
   filter: grayscale(100%) contrast(400%);

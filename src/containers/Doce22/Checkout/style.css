@@ -1,0 +1,23 @@
+.Checkout {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 50px 0;
+}
+
+.Checkout .content {
+  padding: 15px;
+}
+
+.Checkout .hubspot-form {
+  width: 300px;
+  padding: 15px;
+  background: #f5f8fa;
+  border-radius: 3px;
+}
+
+@media (max-width: 450px) {
+  .Checkout .hubspot-form {
+    width: 100%;
+  }
+}

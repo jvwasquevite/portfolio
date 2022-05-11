@@ -1,0 +1,28 @@
+/* Foot styles */
+.Foot {
+  padding-top: 20px;
+}
+
+.Foot .social {
+  display: flex;
+  flex-direction: row;
+  padding: 0 20px;
+}
+
+.Foot .social .icon {
+  margin: 5px;
+  border-radius: 3px;
+}
+
+.Foot .social img {
+  filter: invert(100%);
+  max-width: 18px;
+}
+
+.Foot .social p {
+  margin-right: 5px;
+  margin-top: 3px;
+  font-family: 'Poppins';
+  font-size: 13px;
+  color: white;
+}

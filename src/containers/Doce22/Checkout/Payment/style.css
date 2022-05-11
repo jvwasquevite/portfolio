@@ -1,0 +1,66 @@
+.Payment {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 50px 0;
+}
+
+.Payment .content {
+  padding: 25px;
+}
+
+.Payment .box {
+  width: 300px;
+  padding: 15px;
+  background: white;
+  border-radius: 3px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.Payment .box .logo-pay {
+  max-width: 80px;
+}
+
+.Payment .box h3 {
+  color: #333;
+}
+
+.Payment .box p,
+.Payment .box a {
+  font-family: 'Poppins' !important;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.2em;
+  color: #999 !important;
+}
+
+.Payment .box span {
+  display: block;
+  font-family: 'Poppins' !important;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 14px;
+  color: #999;
+}
+
+.Payment .box .primary {
+  font-size: 16px;
+  line-height: 1.2em;
+  color: #333;
+}
+
+.Payment .box .user {
+  text-transform: lowercase;
+}
+
+.Payment .box img {
+  max-width: 180px;
+  padding: 10px 0;
+}
+
+@media (max-width: 450px) {
+  .Payment .box {
+    width: 100%;
+  }
+}
