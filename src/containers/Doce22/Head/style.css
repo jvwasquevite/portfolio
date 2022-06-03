@@ -74,7 +74,7 @@
   animation: glitch_text 1s steps(2, start) infinite;
 }
 .glitch-text__clip::before {
-  content: 'Doce 22';
+  content: attr(title);
   left: 0.05em;
   color: white;
   z-index: 9;

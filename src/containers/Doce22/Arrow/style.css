@@ -1,0 +1,52 @@
+.Arrow {
+  cursor: pointer;
+  text-align: center;
+}
+
+.Arrow p {
+  font-family: 'Poppins';
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 12px;
+  color: #fff;
+  padding-bottom: 15px;
+}
+
+.up p {
+  padding-top: 15px;
+  padding-bottom: 0px;
+}
+
+.Arrow img {
+  position: absolute;
+  max-width: 15px;
+  filter: brightness(100);
+  animation: upDown 1.25s infinite;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.up img {
+  transform: rotate(180deg);
+  animation: downUp 1.25s infinite;
+}
+
+@keyframes upDown {
+  50% {
+    margin-top: -5px;
+  }
+  100% {
+    margin-bottom: 0px;
+  }
+}
+
+@keyframes downUp {
+  50% {
+    margin-top: -5px;
+  }
+  100% {
+    margin-bottom: 0px;
+  }
+}

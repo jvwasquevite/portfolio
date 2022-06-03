@@ -1,0 +1,20 @@
+.Update .head {
+  width: 300px;
+  margin-bottom: 25px;
+}
+
+.Update .hs-form .hs_jobtitle label span:before {
+  content: 'Alterar senha';
+  text-transform: uppercase;
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.Update form input[type='text'],
+.Update form input[type='email'],
+.Update form input[type='password'],
+.Update form textarea {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin: 5px 0;
+}

@@ -5,7 +5,7 @@ import './style.css'
 import HubspotForm from 'react-hubspot-form'
 import Head from '../Head'
 import Foot from '../Foot'
-import ArrowDown from '../ArrowDown'
+import Arrow from '../Arrow'
 
 const Checkout = () => {
   return (
@@ -17,11 +17,11 @@ const Checkout = () => {
           <h3 className="sub-title">Checkout</h3>
           <h1 className="title">VIP List</h1>
         </div>
-        <ArrowDown to="checkout" title="Continuar" />
+        <Arrow to="checkout" title="Continuar" />
       </div>
       <div className="Checkout" id="checkout">
         <div className="content">
-          <div className="hubspot-form">
+          <div className="box">
             <HubspotForm
               portalId="21942175"
               formId="c7ed9041-eb8f-4275-b084-ae909f1eb243"

@@ -6,7 +6,7 @@ import happy from '../../assets/images/memojis/happy.webp'
 import wink from '../../assets/images/memojis/wink.webp'
 import tongue from '../../assets/images/memojis/tongue.webp'
 
-import arrowDown from '../../assets/images/arrow-down.svg'
+import Arrow from '../../assets/images/arrow-down.svg'
 
 const Hero = () => {
   const [currentSlide, setCurrentSlide] = useState(0)
@@ -35,7 +35,7 @@ const Hero = () => {
           duration={1000}
           className="to-resume"
         >
-          <img src={arrowDown} className="arrow-down" alt="Go to resume" />
+          <img src={Arrow} className="arrow-down" alt="Go to resume" />
         </Link>
 
         <Link
@@ -45,7 +45,7 @@ const Hero = () => {
           duration={1000}
           className="to-about"
         >
-          <img src={arrowDown} className="arrow-down" alt="Go to about" />
+          <img src={Arrow} className="arrow-down" alt="Go to about" />
         </Link>
       </div>
     </section>

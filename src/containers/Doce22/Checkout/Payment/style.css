@@ -10,10 +10,6 @@
 }
 
 .Payment .box {
-  width: 300px;
-  padding: 15px;
-  background: white;
-  border-radius: 3px;
   text-align: center;
   margin-bottom: 20px;
 }
@@ -57,6 +53,64 @@
 .Payment .box img {
   max-width: 180px;
   padding: 10px 0;
+}
+
+.Payment .coupon-form {
+  padding: 10px;
+  border-radius: 0 0 3px 3px;
+}
+
+.Payment .coupon-form form {
+  display: flex;
+}
+
+.Payment .coupon-form form input[type='text'] {
+  background: #e8e8e8;
+  padding: 5px 10px;
+  border-radius: 3px 0 0 3px;
+  width: 100%;
+  border: 0;
+}
+
+.Payment .coupon-form form input[type='submit'] {
+  background: #e8e8e8;
+  border: 0;
+  border-radius: 0px 3px 3px 0px;
+  padding: 5px 10px;
+  font-weight: 500;
+  color: #333;
+  cursor: pointer;
+}
+
+.Payment .invalid-coupon,
+.Payment .valid-coupon {
+  padding: 0 10px;
+}
+
+.Payment .invalid-coupon span {
+  display: block;
+  width: 100%;
+  background: rgb(210, 0, 0);
+  font-family: 'Poppins';
+  text-transform: uppercase;
+  color: white;
+  font-weight: 600;
+  font-size: 10px;
+  border-radius: 3px;
+  padding: 5px;
+}
+
+.Payment .valid-coupon span {
+  display: block;
+  width: 100%;
+  background: #333;
+  font-family: 'Poppins';
+  text-transform: uppercase;
+  color: white;
+  font-weight: 600;
+  font-size: 10px;
+  border-radius: 3px;
+  padding: 5px;
 }
 
 @media (max-width: 450px) {

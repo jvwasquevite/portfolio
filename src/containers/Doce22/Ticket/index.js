@@ -12,7 +12,7 @@ const Ticket = () => {
   const handleSubmit = event => {
     event.preventDefault()
 
-    if (passcode === 'vip22' || passcode === 'VIP22') {
+    if (passcode === 'vip22' || passcode === 'Vip22' || passcode === 'VIP22') {
       window.location.href = '/doce22/checkout'
     } else {
       setInvalid('block')

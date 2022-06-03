@@ -1,11 +1,11 @@
 import React from 'react'
 
-const Hero = () => {
+const Hero = ({ title, subtitle, description }) => {
   return (
     <div className="Hero">
-      <h3 className="sub-title">Hype Pub • Pelotas/RS</h3>
-      <h1 className="title">Open Bar</h1>
-      <p className="description">Polar & Vodka com Energético/Kit</p>
+      <h3 className="sub-title">{subtitle}</h3>
+      <h1 className="title">{title}</h1>
+      <p className="description">{description}</p>
     </div>
   )
 }

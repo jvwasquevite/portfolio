@@ -1,9 +1,13 @@
 .Information {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: center;
   margin-bottom: 50px;
   height: 100vh;
+}
+
+.Information .item {
+  margin-bottom: 40px;
 }
 
 .Information .title {
