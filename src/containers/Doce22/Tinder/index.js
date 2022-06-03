@@ -9,7 +9,7 @@ import Foot from '../Foot'
 import Logo from './Logo'
 
 const Tinder = () => {
-  const { setUser, setIsAuth } = useContext(UserContext)
+  const { setIsAuth } = useContext(UserContext)
 
   const [email, setEmail] = useState('')
   const [password, setPassword] = useState('')
@@ -31,7 +31,6 @@ const Tinder = () => {
         const { data: response } = await getTinderUser(email)
 
         if (response[0].jobtitle.value === password) {
-          setUser(email)
           setIsAuth(true)
           localStorage.setItem('user', `${email}`)
           window.location.href = '/doce22/tinder/cards'
