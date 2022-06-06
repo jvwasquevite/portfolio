@@ -229,27 +229,8 @@
   justify-content: center;
 }
 
-.Popup .content {
-  background-color: white;
-  width: 300px;
-  border-radius: 5px;
-  padding: 15px;
-}
-
-.Popup .content p {
-  line-height: 1.5em;
-  font-size: 14px;
-  margin-bottom: 10px;
-}
-
-.Popup .actions {
-  display: flex;
-  width: 300px;
-  margin-top: 6px;
-}
-
-.Popup .actions button {
-  width: 100%;
+.Popup button {
+  width: 200px;
   border-radius: 5px;
   font-family: 'Poppins';
   letter-spacing: normal;
@@ -258,12 +239,6 @@
   cursor: pointer;
 }
 
-.Popup .actions button:nth-child(1) {
-  background: #fe4654;
-  margin-right: 3px;
-}
-
-.Popup .actions button:nth-child(2) {
+.Popup button:nth-child(1) {
   background: #2ae5c2;
-  margin-left: 3px;
 }

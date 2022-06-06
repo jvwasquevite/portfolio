@@ -22,6 +22,7 @@ const Cards = () => {
   const [data, setData] = useState([])
   const [userData, setUserData] = useState([])
   const [userPhoto, setUserPhoto] = useState('')
+  const [userEmail, setUserEmail] = useState('')
 
   useEffect(() => {
     /**
@@ -46,6 +47,7 @@ const Cards = () => {
         )
         setUserData(response)
         setUserPhoto(response[0].photos.value)
+        setUserEmail(response[0].email.value)
       } catch (err) {
         console.log(err)
       }
@@ -82,13 +84,17 @@ const Cards = () => {
   const canGoBack = currentIndex < data.length - 1
 
   const canSwipe = currentIndex >= 0
+
   // set last direction and decrease current index
-  const swiped = (direction, nameToDelete, index) => {
+  const swiped = (direction, name, email, index) => {
     setLastDirection(direction)
     updateCurrentIndex(index - 1)
 
     if (direction === 'right') {
       setPopup('absolute')
+      console.log(userEmail)
+      console.log(name)
+      console.log(email)
     }
   }
 
@@ -115,18 +121,11 @@ const Cards = () => {
     await childRefs[newIndex].current.restoreCard()
   }
 
-  const Popup = ({ name }) => {
+  const Popup = () => {
     return (
       <div className="Popup" style={{ display: popup }}>
-        <div className="content">
-          <p>
-            Deseja notificar <b>{name}</b> via e-mail que você curtiu ela?
-          </p>
-        </div>
-        <div className="actions">
-          <button onClick={() => setPopup('none')}>Não</button>
-          <button onClick={() => setPopup('none')}>Sim</button>
-        </div>
+        <button onClick={() => setPopup('none')}>Enviar curtida!</button>
+        <button onClick={() => setPopup('none')}>Cancelar</button>
       </div>
     )
   }
@@ -176,12 +175,14 @@ const Cards = () => {
             </div>
             {data.map((user, index) => (
               <>
-                <Popup name={() => user.firstname.value} />
+                <Popup />
                 <TinderCard
                   ref={childRefs[index]}
                   className="swipe"
                   key={user.firstname.value}
-                  onSwipe={dir => swiped(dir, user.firstname.value, index)}
+                  onSwipe={dir =>
+                    swiped(dir, user.firstname.value, user.email.value, index)
+                  }
                   onCardLeftScreen={() =>
                     outOfFrame(user.firstname.value, index)
                   }
@@ -223,7 +224,7 @@ const Cards = () => {
               </>
             ))}
           </div>
-          <div className="buttons">
+          {/* <div className="buttons">
             <button onClick={() => swipe('left')}>
               <img src={unlike} alt="Unlike" />
             </button>
@@ -233,7 +234,7 @@ const Cards = () => {
             <button onClick={() => swipe('right')}>
               <img src={like} alt="Like" />
             </button>
-          </div>
+          </div> */}
         </div>
         <Foot />
       </div>

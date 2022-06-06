@@ -2,6 +2,8 @@ import React from 'react'
 import Background from './Background'
 import './style.css'
 
+import { Link } from 'react-router-dom'
+
 import Head from './Head'
 import Foot from './Foot'
 import Ticket from './Ticket'
@@ -18,7 +20,7 @@ const Doce22 = () => {
         <Head title="Doce 22" subtitle="Meus" />
         <Hero
           title="Open Bar"
-          subtitle="Hype Pub • Pelotas/RS"
+          subtitle="Hype Pub • 10.jun.22 • 23h"
           description="Polar & Vodka com energético/Kit"
         />
         <Arrow to="info" title="Mais informações" />
