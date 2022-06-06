@@ -2,15 +2,19 @@ import React, { useState, useEffect, useContext, useMemo, useRef } from 'react'
 import './style.css'
 
 import TinderCard from 'react-tinder-card'
-import { getTinderList, getTinderUser } from '../services/requests'
+import {
+  getTinderList,
+  getTinderUser,
+  sendTinderLike,
+} from '../services/requests'
 import { UserContext } from '../../../../routes'
 import Background from '../../Background'
 
 import instagram from '../../../../assets/images/social-icons/instagram.svg'
 import back from '../assets/back.png'
-import like from '../assets/like.png'
-import unlike from '../assets/unlike.png'
-import undo from '../assets/undo.png'
+// import like from '../assets/like.png'
+// import unlike from '../assets/unlike.png'
+// import undo from '../assets/undo.png'
 
 import Logo from '../Logo'
 import Foot from '../../Foot'
@@ -22,7 +26,6 @@ const Cards = () => {
   const [data, setData] = useState([])
   const [userData, setUserData] = useState([])
   const [userPhoto, setUserPhoto] = useState('')
-  const [userEmail, setUserEmail] = useState('')
 
   useEffect(() => {
     /**
@@ -47,7 +50,6 @@ const Cards = () => {
         )
         setUserData(response)
         setUserPhoto(response[0].photos.value)
-        setUserEmail(response[0].email.value)
       } catch (err) {
         console.log(err)
       }
@@ -81,20 +83,35 @@ const Cards = () => {
     currentIndexRef.current = val
   }
 
-  const canGoBack = currentIndex < data.length - 1
+  // const canGoBack = currentIndex < data.length - 1
+  // const canSwipe = currentIndex >= 0
 
-  const canSwipe = currentIndex >= 0
+  const Popup = () => {
+    return (
+      <div className="Popup" style={{ display: popup }}>
+        <button onClick={() => setPopup('none')}>Enviar curtida!</button>
+        <button onClick={() => setPopup('none')}>Cancelar</button>
+      </div>
+    )
+  }
+
+  const sendLike = async (from, to) => {
+    try {
+      await sendTinderLike(from, to)
+    } catch (err) {
+      console.log(err)
+    }
+  }
 
   // set last direction and decrease current index
-  const swiped = (direction, name, email, index) => {
+  const swiped = async (direction, name, email, index) => {
     setLastDirection(direction)
     updateCurrentIndex(index - 1)
 
+    const loggedUserEmail = await userData[0].email.value
+
     if (direction === 'right') {
-      setPopup('absolute')
-      console.log(userEmail)
-      console.log(name)
-      console.log(email)
+      sendLike(loggedUserEmail, email)
     }
   }
 
@@ -107,28 +124,19 @@ const Cards = () => {
     // during latest swipes. Only the last outOfFrame event should be considered valid
   }
 
-  const swipe = async dir => {
-    if (canSwipe && currentIndex < data.length) {
-      await childRefs[currentIndex].current.swipe(dir) // Swipe the card!
-    }
-  }
+  // const swipe = async dir => {
+  //   if (canSwipe && currentIndex < data.length) {
+  //     await childRefs[currentIndex].current.swipe(dir) // Swipe the card!
+  //   }
+  // }
 
   // increase current index and show card
-  const goBack = async () => {
-    if (!canGoBack) return
-    const newIndex = currentIndex + 1
-    updateCurrentIndex(newIndex)
-    await childRefs[newIndex].current.restoreCard()
-  }
-
-  const Popup = () => {
-    return (
-      <div className="Popup" style={{ display: popup }}>
-        <button onClick={() => setPopup('none')}>Enviar curtida!</button>
-        <button onClick={() => setPopup('none')}>Cancelar</button>
-      </div>
-    )
-  }
+  // const goBack = async () => {
+  //   if (!canGoBack) return
+  //   const newIndex = currentIndex + 1
+  //   updateCurrentIndex(newIndex)
+  //   await childRefs[newIndex].current.restoreCard()
+  // }
 
   return (
     <div className="Doce22 Card">
