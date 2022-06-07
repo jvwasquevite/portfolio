@@ -44,12 +44,12 @@ const Cards = () => {
      * Get logged user data from local storage
      */
     const getUserData = async () => {
+      const userLocal = await localStorage.getItem('user')
+
       try {
-        const { data: response } = await getTinderUser(
-          localStorage.getItem('user')
-        )
-        setUserData(response)
-        setUserPhoto(response[0].photos.value)
+        const { data: response } = await getTinderUser(userLocal)
+        await setUserData(response)
+        await setUserPhoto(response[0].photos.value)
       } catch (err) {
         console.log(err)
       }
@@ -207,6 +207,16 @@ const Cards = () => {
                     <div className="content">
                       <h3>{user.firstname.value}</h3>
                       <p>{user.bio === undefined || user.bio.value}</p>
+                      <a
+                        href={`https://www.instagram.com/${user.instagram.value}`}
+                        target="_blank"
+                        rel="noreferrer"
+                      >
+                        <span className="instagram">
+                          <img src={instagram} alt="Instagram" />
+                          <span>{user.instagram.value}</span>
+                        </span>
+                      </a>
                       <div className="foot">
                         <div className="tags">
                           <div className="tag">
@@ -216,15 +226,6 @@ const Cards = () => {
                             {user.orientacao_sexual.value}
                           </div>
                         </div>
-                        <a
-                          href={`https://www.instagram.com/${user.instagram.value}`}
-                          target="_blank"
-                          rel="noreferrer"
-                        >
-                          <div className="instagram">
-                            <img src={instagram} alt="Instagram" />
-                          </div>
-                        </a>
                       </div>
                     </div>
                   </div>

@@ -12,6 +12,7 @@ import Foot from '../../Foot'
 
 const Profile = () => {
   const [user, setUser] = useState([])
+  const [photo, setPhoto] = useState('')
 
   const logout = () => {
     localStorage.removeItem('user')
@@ -20,11 +21,12 @@ const Profile = () => {
 
   useEffect(() => {
     const getData = async () => {
+      const userLocal = await localStorage.getItem('user')
+
       try {
-        const { data: response } = await getTinderUser(
-          localStorage.getItem('user')
-        )
-        setUser(response)
+        const { data: response } = await getTinderUser(userLocal)
+        await setUser(response)
+        await setPhoto(response[0].photos.value)
       } catch (err) {
         console.log(err)
       }
@@ -32,8 +34,6 @@ const Profile = () => {
 
     getData()
   }, [])
-
-  console.log(user)
 
   return (
     <div className="Doce22 Profile">
@@ -65,7 +65,7 @@ const Profile = () => {
                     backgroundImage:
                       user.photos === undefined
                         ? 'url(https://i.imgur.com/u8p5O2O.jpg)'
-                        : `url(${user.photos.value})`,
+                        : `url(${photo})`,
                   }}
                   className="card"
                 >
