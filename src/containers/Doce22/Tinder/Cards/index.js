@@ -207,16 +207,6 @@ const Cards = () => {
                     <div className="content">
                       <h3>{user.firstname.value}</h3>
                       <p>{user.bio === undefined || user.bio.value}</p>
-                      <a
-                        href={`https://www.instagram.com/${user.instagram.value}`}
-                        target="_blank"
-                        rel="noreferrer"
-                      >
-                        <span className="instagram">
-                          <img src={instagram} alt="Instagram" />
-                          <span>{user.instagram.value}</span>
-                        </span>
-                      </a>
                       <div className="foot">
                         <div className="tags">
                           <div className="tag">
@@ -227,6 +217,20 @@ const Cards = () => {
                           </div>
                         </div>
                       </div>
+                      <a
+                        href={`https://www.instagram.com/${user.instagram.value}`}
+                        target="_blank"
+                        rel="noreferrer"
+                      >
+                        <div className="instagram">
+                          <img src={instagram} alt="Instagram" />
+                          <span>
+                            {user.instagram.value.charAt(0) === '@'
+                              ? user.instagram.value.substring(1)
+                              : user.instagram.value}
+                          </span>
+                        </div>
+                      </a>
                     </div>
                   </div>
                 </TinderCard>

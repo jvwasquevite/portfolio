@@ -165,44 +165,8 @@ const Payment = () => {
       <div className="section full-screen">
         <Head />
         <div>
-          <h3 className="sub-title">Pagamento</h3>
-          <h1 className="title">VIP List</h1>
-        </div>
-        <Arrow to="payment" title="Continuar" />
-      </div>
-      <div className="Payment" id="payment">
-        <div className="content">
-          <div className="box">
-            <h3 className="sub-title">Cupom de desconto</h3>
-            <p>
-              Insira um <b>cupom válido</b> abaixo.
-            </p>
-            <div className="coupon-form">
-              <form onSubmit={handleSubmit}>
-                <input
-                  type="text"
-                  value={coupon}
-                  placeholder="Insira o código aqui"
-                  onChange={handleChange}
-                />
-                <input type="submit" value="Validar" />
-              </form>
-            </div>
-            <div className="invalid-coupon" style={{ display: invalid }}>
-              <span>Código inválido, tente novamente.</span>
-            </div>
-            <div className="valid-coupon" style={{ display: valid }}>
-              <span>Cupom de desconto expirado.</span>
-            </div>
-          </div>
-          {content.map(item => (
-            <div className="box">
-              <img src={item.logo} className="logo-pay" alt="Logo" />
-              <h3 className="sub-title">{item.title}</h3>
-              <p>{item.description}</p>
-              <img src={item.qrcode} alt="QR Code" />
-            </div>
-          ))}
+          <h3 className="sub-title">Solicite o pagamento no local</h3>
+          <h1 className="title">VIP LIST</h1>
         </div>
         <Foot />
       </div>

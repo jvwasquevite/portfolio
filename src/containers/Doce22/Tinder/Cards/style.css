@@ -65,15 +65,17 @@
     #cc2366 75%,
     #bc1888 100%
   );
-  height: 18px;
-  border-radius: 100px;
+
+  border-radius: 5px;
   display: flex;
   align-items: center;
   justify-content: center;
   cursor: pointer;
-  padding: 1px 10px 1px 8px;
-  max-width: fit-content;
+  padding: 5px 10px 5px 8px;
+  max-width: auto;
   margin-bottom: 5px;
+  z-index: 9999;
+  margin-top: 10px;
 }
 
 .Card .cardContainer .card .content .instagram img {
@@ -85,9 +87,9 @@
   font-family: Poppins;
   color: white;
   font-weight: 600;
-  font-size: 10px;
+  font-size: 12px;
   text-transform: uppercase;
-  margin: -2px 0 0 3px;
+  margin: 0px 0 0 3px;
 }
 
 .Card .cardContainer .card .content .tags {

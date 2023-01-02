@@ -12,6 +12,8 @@ import SignUp from './containers/Doce22/Tinder/SignUp'
 import Profile from './containers/Doce22/Tinder/Profile'
 import Filters from './containers/Doce22/Tinder/Filters'
 import Update from './containers/Doce22/Tinder/Profile/Update'
+import Guests from './containers/Doce22/Tinder/Guests'
+import Party from './containers/Doce22/Party'
 
 export const UserContext = createContext()
 
@@ -24,8 +26,11 @@ const Routes = () => {
       <Switch>
         <Route exact path="/" component={Home} />
         <Route exact path="/doce22" component={Doce22} />
+        <Route exact path="/doce22/party" component={Party} />
         <Route exact path="/doce22/checkout" component={Checkout} />
         <Route exact path="/doce22/checkout/pay" component={Payment} />
+        <Route exact path="/doce22/checkout/pay" component={Payment} />
+        <Route exact path="/doce22/guests" component={Guests} />
         <UserContext.Provider value={{ filter, setFilter, isAuth, setIsAuth }}>
           <Route exact path="/doce22/tinder" component={Tinder} />
           <Route exact path="/doce22/tinder/signup" component={SignUp} />

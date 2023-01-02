@@ -1,6 +1,8 @@
 import React, { useState } from 'react'
 import './style.css'
 
+import { Link } from 'react-router-dom'
+
 const Ticket = () => {
   const [passcode, setPasscode] = useState('')
   const [invalid, setInvalid] = useState('none')
@@ -23,8 +25,7 @@ const Ticket = () => {
     <>
       <div className="Ticket">
         <div className="ticket-head">
-          <h3 className="sub-title">VIP Passcode</h3>
-          <span>Restrito para amigos e conhecidos</span>
+          <h3 className="sub-title">Guest List</h3>
         </div>
         <img
           src="https://studiosol-a.akamaihd.net/uploadfile/letras/albuns/1/a/4/6/1112801626689375.jpg"
@@ -42,15 +43,9 @@ const Ticket = () => {
           <span>Código inválido, tente novamente.</span>
         </div>
         <div className="ticket-form">
-          <form onSubmit={handleSubmit}>
-            <input
-              type="text"
-              value={passcode}
-              placeholder="Insira o código aqui"
-              onChange={handleChange}
-            />
-            <input type="submit" value="Validar" />
-          </form>
+          <Link to="/doce22/checkout">
+            <button>Comprar ingressos</button>
+          </Link>
         </div>
       </div>
     </>

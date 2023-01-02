@@ -18,11 +18,31 @@ const Doce22 = () => {
       <Background />
       <div className="section full-screen">
         <Head title="Doce 22" subtitle="Meus" />
-        <Hero
-          title="Open Bar"
-          subtitle="Hype Pub • 10.jun.22 • 23h"
-          description="Polar & Vodka com energético/Kit"
-        />
+        <div>
+          <Hero
+            title="Open Bar"
+            subtitle="Hype Pub • 10.jun.22 • 23h"
+            description="Polar & Vodka com energético/Kit"
+          />
+          <div className="buttons">
+            <Link to="/doce22/tinder">
+              <button style={{ display: 'block', width: '100%' }}>
+                Acessar Tinder
+              </button>
+            </Link>
+            <a href="https://app.sli.do/event/kuZVcRW4H1TMRdSshpbnTV">
+              <button
+                style={{
+                  display: 'block',
+                  width: '100%',
+                  background: '#3b4068',
+                }}
+              >
+                Acessar Mensagens Anônimas
+              </button>
+            </a>
+          </div>
+        </div>
         <Arrow to="info" title="Mais informações" />
       </div>
       <div className="section full-screen" id="info">
