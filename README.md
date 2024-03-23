@@ -1,7 +1,7 @@
 <br />
 <p align="center">
   <a href="https://github.com/jvwasquevite/portfolio">
-    <img src="https://jvwasquevite.com/github/logo.png" alt="Logo">
+    <img src="https://jvwasquevite.com.br/github/logo.png" alt="Logo">
   </a>
 
   <h3 align="center">Portfolio</h3>
