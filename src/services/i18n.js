@@ -43,28 +43,28 @@ const resources = {
           {
             subheader: "Formação acadêmica",
             header: "Universidade Federal de Pelotas",
-            description: "Graduando em Ciência da Computação",
-            secondarytext: "2019 – <b>Em progresso</b>",
+            description: "Graduação em Ciência da Computação",
+            secondarytext: "Engenharia e Arquitetura de Software",
             image: `${ufpel}`,
           },
           {
             subheader: "Experiência",
             header: "Empresa Júnior Hut8",
-            description: "Presidente e Desenvolvedor Frontend",
-            secondarytext: "<b>Anterior:</b> Diretor de Projetos",
+            description: "Desenvolvedor web fullstack",
+            secondarytext: "Presidente e Diretor de Projetos",
             image: `${hut8}`,
           },
         ],
         secondary: [
           {
+            subheader: "Experiência",
+            header: "Engenheiro de Software",
+            secondarytext: "Arquitetura e escabilidade",
+          },
+          {
             subheader: "Certificado",
             header: "Cambridge English Certificate",
             secondarytext: "Cambridge Assessment English",
-          },
-          {
-            subheader: "Experiência",
-            header: "Desenvolvimento web",
-            secondarytext: "Freelancer",
           },
         ],
         button: "Mais no LinkedIn",
@@ -73,31 +73,31 @@ const resources = {
         content: [
           {
             subheader: "Frontend",
-            header: "React e Vue.js",
+            header: "React e Vue.js + TypeScript",
             secondarytext: "Intermediário a avançado",
             level: "80%",
           },
           {
-            subheader: "Data Science",
-            header: "Python Pandas",
-            secondarytext: "Iniciante",
-            level: "40%",
+            subheader: "Backend",
+            header: "Node.js + TypeScript",
+            secondarytext: "Intermediário a avançado",
+            level: "90%",
           },
           {
-            subheader: "Design UI",
-            header: "Figma e Adobe XD",
+            subheader: "Engenharia de Software",
+            header: "Software Architect, Product Manager e Scrum Master",
+            secondarytext: "Avançado",
+            level: "98%",
+          },
+          {
+            subheader: "Design UI/UX",
+            header: "UX Designer com Figma",
             secondarytext: "Intermediário a avançado",
             level: "70%",
           },
-          {
-            subheader: "Gestão empresarial",
-            header: "Modelagem e metodologias ágeis",
-            secondarytext: "Avançado",
-            level: "90%",
-          },
         ],
-        other: `<b>Outras habilidades:</b> Wordpress/Landing Pages, Copywriting, SEO, 
-        Inbound Marketing, Illustrator e Photoshop.`,
+        other: `<b>Outras habilidades:</b> IA e Machine Learning com Python, Landing Pages em Wordpress, Inbound Marketing,
+        Copywriting e SEO.`,
       },
       portfolio: {
         content: [
@@ -216,7 +216,7 @@ const resources = {
       head: {
         subheader: "About me",
         header: `What's up? I'm <b>João</b>.`,
-        content: `<mark>Computer Scientist</mark> at Federal University of Pelotas. 
+        content: `<mark>Computer Scientist Bachelor</mark> at Federal University of Pelotas. 
         <mark>Fullstack developer</mark> studying <mark>software engineering</mark> in free time. 
         Passionate about data science, technological innovation, entrepreneurship and 
         creative processes: from design to programming.`,
@@ -233,28 +233,28 @@ const resources = {
           {
             subheader: "Academic Background",
             header: "Federal University of Pelotas",
-            description: "Graduating in Computer Science",
-            secondarytext: "2019 – <b>In progress</b>",
+            description: "Graduation in Computer Science",
+            secondarytext: "Software engineering and architecture",
             image: `${ufpel}`,
           },
           {
             subheader: "Experience",
             header: "Hut8 Junior Enterprise",
-            description: "President and Frontend Developer",
-            secondarytext: "<b>Previous:</b> Project Director",
+            description: "Fullstack web developer",
+            secondarytext: "President and Project Diretor",
             image: `${hut8}`,
           },
         ],
         secondary: [
           {
+            subheader: "Experience",
+            header: "Software engineer",
+            secondarytext: "Architecture and scalability",
+          },
+          {
             subheader: "Certified",
             header: "Cambridge English Certificate",
             secondarytext: "Cambridge Assessment English",
-          },
-          {
-            subheader: "Experience",
-            header: "Web development",
-            secondarytext: "Freelancer",
           },
         ],
         button: "More on LinkedIn",
@@ -263,31 +263,30 @@ const resources = {
         content: [
           {
             subheader: "Frontend",
-            header: "React and Vue.js",
+            header: "React and Vue.js + TypeScript",
             secondarytext: "Intermediate to advanced",
             level: "80%",
           },
           {
-            subheader: "Data Science",
-            header: "Python Pandas",
-            secondarytext: "Beginner",
-            level: "40%",
+            subheader: "Backend",
+            header: "Node.js + TypeScript",
+            secondarytext: "Intermediate to advanced",
+            level: "90%",
           },
           {
-            subheader: "UI Design",
-            header: "Figma and Adobe XD",
+            subheader: "Software engineering",
+            header: "Software Architect, Product Manager e Scrum Master",
+            secondarytext: "Advanced",
+            level: "98%",
+          },
+          {
+            subheader: "UI/UX Design",
+            header: "UX Designer with Figma",
             secondarytext: "Intermediate to advanced",
             level: "70%",
           },
-          {
-            subheader: "Business management",
-            header: "Modeling and agile methodologies",
-            secondarytext: "Advanced",
-            level: "90%",
-          },
         ],
-        other: `<b>Other skills:</b> Wordpress/Landing Pages, Copywriting, SEO, 
-        Inbound Marketing, Illustrator and Photoshop.`,
+        other: `<b>Other skills:</b> IA and Machine Learning with Python, Landing Pages with Wordpress, Inbound Marketing, Copywriting e SEO.`,
       },
       portfolio: {
         content: [
