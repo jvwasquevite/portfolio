@@ -1,18 +1,13 @@
 import React from "react"
 import "./style.css"
 
-import facebook from "../../../assets/images/social-icons/facebook.svg"
+import gmail from "../../../assets/images/social-icons/gmail.svg"
 import linkedin from "../../../assets/images/social-icons/linkedin.svg"
 import behance from "../../../assets/images/social-icons/behance.svg"
 import github from "../../../assets/images/social-icons/github.svg"
 import whatsapp from "../../../assets/images/social-icons/whatsapp.svg"
 
 const social = [
-  {
-    path: facebook,
-    url: "https://www.facebook.com/jvwasquevite",
-    color: "#3A5A99",
-  },
   {
     path: linkedin,
     url: "https://www.linkedin.com/in/jvwasquevite/",
@@ -27,6 +22,11 @@ const social = [
     path: github,
     url: "https://github.com/jvwasquevite/",
     color: "#3F91CB",
+  },
+  {
+    path: gmail,
+    url: "mailto:jvwasquevite@gmail.com",
+    color: "#ea4335",
   },
   {
     path: whatsapp,
