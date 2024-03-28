@@ -26,9 +26,8 @@ const resources = {
       head: {
         subheader: "Sobre mim",
         header: `Prazer, sou o <b>João</b>.`,
-        content: `Cientista da Computação pela 
-        <a href="https://portal.ufpel.edu.br/" target="_blank" rel="noreferrer">Universidade Federal de Pelotas</a>. 
-        Desenvolvedor fullstack estudando engenharia de software no tempo livre. 
+        content: `<mark>Cientista da Computação</mark> pela Universidade Federal de Pelotas. 
+        <mark>Desenvolvedor fullstack</mark> estudando <mark>engenharia de software</mark> no tempo livre. 
         Apaixonado por ciência de dados, inovação tecnológica, empreendedorismo e 
         processos criativos: desde o design até a programação.`,
         menu: [
@@ -217,9 +216,8 @@ const resources = {
       head: {
         subheader: "About me",
         header: `What's up? I'm <b>João</b>.`,
-        content: `Computer Scientist at  
-        <a href="https://portal.ufpel.edu.br/" target="_blank" rel="noreferrer">Federal University of Pelotas</a>. 
-        Fullstack developer studying software engineering in free time. 
+        content: `<mark>Computer Scientist</mark> at Federal University of Pelotas. 
+        <mark>Fullstack developer</mark> studying <mark>software engineering</mark> in free time. 
         Passionate about data science, technological innovation, entrepreneurship and 
         creative processes: from design to programming.`,
         menu: [

@@ -21,7 +21,7 @@ const social = [
   {
     path: github,
     url: "https://github.com/jvwasquevite/",
-    color: "#3F91CB",
+    color: "#4493f8",
   },
   {
     path: gmail,
