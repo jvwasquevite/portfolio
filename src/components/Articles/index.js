@@ -1,9 +1,9 @@
-import React, { useEffect, useState } from 'react'
-import './style.css'
+import React, { useEffect, useState } from "react"
+import "./style.css"
 
-import { getPosts } from '../../services/requests'
-import { useTranslation } from 'react-i18next'
-import Parser from 'html-react-parser'
+import { getPosts } from "../../services/requests"
+import { useTranslation } from "react-i18next"
+import Parser from "html-react-parser"
 
 const Articles = () => {
   const { t } = useTranslation()
@@ -17,15 +17,23 @@ const Articles = () => {
       .catch(err => console.error(err))
   }, [])
 
+  console.log(data)
+
   return (
     <section id="Articles">
       <div className="container">
         {data.map((post, key) => {
+          let thumbnail = post.description
+            .toString()
+            .match(/<img[^>]+src="([^">]+)"/)[1]
+
           return (
             <a href={post.link} key={key} target="_blank" rel="noreferrer">
               <div
                 className="post"
-                style={{ backgroundImage: `url(${post.thumbnail})` }}
+                style={{
+                  backgroundImage: `url(${thumbnail})`,
+                }}
               >
                 <div className="content">
                   <p className="sub-header">Medium</p>
@@ -37,14 +45,14 @@ const Articles = () => {
         })}
       </div>
       <div className="foot">
-        <p>{Parser(t('articles.integration'))}</p>
+        <p>{Parser(t("articles.integration"))}</p>
         <a
-          href={t('articles.button.url')}
+          href={t("articles.button.url")}
           className="button more"
           target="_blank"
           rel="noreferrer"
         >
-          <hr /> {t('articles.button.name')}
+          <hr /> {t("articles.button.name")}
         </a>
       </div>
     </section>
