@@ -9,7 +9,7 @@
   <p align="center">
     Personal portfolio developed with React
     <br />
-    <a href="https://jvwasquevite.com/" target="_blank"><strong>Access website »</strong></a>
+    <a href="https://jvwasquevite.com.br/" target="_blank"><strong>Access website »</strong></a>
     <br />
     <br />
     <a href="https://github.com/jvwasquevite/portfolio/issues">Report Bug</a>
@@ -27,7 +27,7 @@
 
 ## About The Project
 
-This project was developed with React, deployed at [jvwasquevite.com](https://jvwasquevite.com/), with multilinguage support, and integration with externals APIs.
+This project was developed with React, deployed at [jvwasquevite.com](https://jvwasquevite.com.br/), with multilinguage support, and integration with externals APIs.
 
 ### Built With
 
