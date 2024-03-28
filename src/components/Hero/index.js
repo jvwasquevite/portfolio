@@ -1,12 +1,12 @@
-import React, { useEffect, useState } from 'react'
-import { Link } from 'react-scroll'
-import './style.css'
+import React, { useEffect, useState } from "react"
+import { Link } from "react-scroll"
+import "./style.css"
 
-import happy from '../../assets/images/memojis/happy.webp'
-import wink from '../../assets/images/memojis/wink.webp'
-import tongue from '../../assets/images/memojis/tongue.webp'
+import happy from "../../assets/images/memojis/happy.webp"
+import wink from "../../assets/images/memojis/wink.webp"
+import tongue from "../../assets/images/memojis/tongue.webp"
 
-import Arrow from '../../assets/images/arrow-down.svg'
+import Arrow from "../../assets/images/arrow-down.svg"
 
 const Hero = () => {
   const [currentSlide, setCurrentSlide] = useState(0)
@@ -21,7 +21,7 @@ const Hero = () => {
     return () => {
       clearInterval(intervalId)
     }
-  }, [])
+  }, [slides.length])
 
   return (
     <section id="Hero">
