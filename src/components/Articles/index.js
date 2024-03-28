@@ -1,23 +1,21 @@
 import React, { useEffect, useState } from "react"
 import "./style.css"
 
-import { getPosts } from "../../services/requests"
+import { getArticles } from "../../services/requests"
 import { useTranslation } from "react-i18next"
 import Parser from "html-react-parser"
 
 const Articles = () => {
   const { t } = useTranslation()
-  const [data, getData] = useState([])
+  const [data, setData] = useState([])
 
   useEffect(() => {
-    getPosts()
+    getArticles()
       .then(res => {
-        getData(res.data.items)
+        setData(res.data.items)
       })
       .catch(err => console.error(err))
   }, [])
-
-  console.log(data)
 
   return (
     <section id="Articles">

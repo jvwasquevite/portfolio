@@ -1,19 +1,20 @@
-import React from 'react'
-import './style.css'
+import React from "react"
+import "./style.css"
 
-import Head from '../../components/Head'
-import Hero from '../../components/Hero'
-import Resume from '../../components/Resume'
-import Skills from '../../components/Skills'
-import Portfolio from '../../components/Portfolio'
-import Articles from '../../components/Articles'
-import Contact from '../../components/Contact'
-import Foot from '../../components/Foot'
+import Head from "../../components/Head"
+import Hero from "../../components/Hero"
+import Resume from "../../components/Resume"
+import Skills from "../../components/Skills"
+import Portfolio from "../../components/Portfolio"
+import Articles from "../../components/Articles"
+import Contact from "../../components/Contact"
+import Foot from "../../components/Foot"
 
-import About from '../../components/About'
-import Navbar from '../../components/Navbar'
+import About from "../../components/About"
+import Navbar from "../../components/Navbar"
 
-import { MenuContextProvider } from '../../services/contexts/MenuContext'
+import { MenuContextProvider } from "../../services/contexts/MenuContext"
+import Projects from "../../components/Projects"
 
 const Home = () => {
   return (
@@ -30,6 +31,7 @@ const Home = () => {
           <Resume />
           <Skills />
           <Portfolio />
+          <Projects />
           <Articles />
           <Contact />
           <Foot />

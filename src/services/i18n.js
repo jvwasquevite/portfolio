@@ -34,6 +34,7 @@ const resources = {
           { path: "Resume", name: "Resumo" },
           { path: "Skills", name: "Skills" },
           { path: "Portfolio", name: "Portfólio" },
+          { path: "Projects", name: "Projetos" },
           { path: "Articles", name: "Artigos" },
           { path: "Contact", name: "Contato" },
         ],
@@ -169,6 +170,13 @@ const resources = {
           url: "https://www.behance.net/jvwasquevite",
         },
       },
+      projects: {
+        integration: `Integrado com a <a href="https://docs.github.com/pt/rest" target="_blank" rel="noreferrer">API do GitHub</a>`,
+        button: {
+          name: "Mais no Github",
+          url: "https://github.com/jvwasquevite",
+        },
+      },
       articles: {
         integration: `Integrado com a <a href="https://github.com/Medium/medium-api-docs" target="_blank" rel="noreferrer">API do Medium</a>`,
         button: {
@@ -224,6 +232,7 @@ const resources = {
           { path: "Resume", name: "Resume" },
           { path: "Skills", name: "Skills" },
           { path: "Portfolio", name: "Portfolio" },
+          { path: "Projects", name: "Projects" },
           { path: "Articles", name: "Articles" },
           { path: "Contact", name: "Contact" },
         ],
@@ -356,6 +365,13 @@ const resources = {
         button: {
           name: "More on Behance",
           url: "https://www.behance.net/jvwasquevite",
+        },
+      },
+      projects: {
+        integration: `Integrated with <a href="https://docs.github.com/en/rest" target="_blank" rel="noreferrer">GitHub API</a>`,
+        button: {
+          name: "More on GitHub",
+          url: "https://github.com/jvwasquevite",
         },
       },
       articles: {

@@ -1,0 +1,102 @@
+#Projects .container {
+  columns: 2;
+  gap: 30px;
+}
+
+#Projects .container.animate {
+  animation: fadeInAnimation ease 1s;
+}
+
+#Projects .project {
+  display: inline-block;
+  width: 100%;
+  border-radius: 3px;
+  margin-bottom: 30px;
+}
+
+#Projects .content {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  background: var(--background-secondary-color);
+  padding: 20px;
+  border-radius: 3px;
+  transition: left 500ms ease-in-out;
+}
+
+#Projects a {
+  text-decoration: none;
+}
+
+#Projects .pagination {
+  width: 100%;
+}
+
+#Projects .pagination ul {
+  display: flex;
+  list-style-type: none;
+  float: right;
+  gap: 5px;
+}
+
+#Projects .pagination ul li {
+  position: relative;
+  width: 30px;
+  height: 30px;
+  color: var(--secondary-color);
+  text-align: center;
+  line-height: 30px;
+  font-size: 12px;
+  cursor: pointer;
+}
+
+#Projects .pagination ul li.active {
+  color: var(--primary-color);
+  background: var(--background-secondary-color);
+  border-radius: 3px;
+}
+
+#Projects ul li:hover {
+  opacity: 0.8;
+}
+
+#Projects .foot {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  margin-top: 30px;
+}
+
+#Projects .foot p {
+  font: 400 10px "Inter", sans-serif;
+  color: var(--secondary-color);
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+/* For smaller devices */
+@media (max-width: 1150px) {
+  #Projects .container {
+    display: block;
+  }
+
+  #Projects .foot {
+    flex-direction: column;
+    align-items: flex-end;
+  }
+
+  #Projects .foot p {
+    margin-bottom: 10px;
+  }
+}
+
+@keyframes fadeInAnimation {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}

@@ -1,3 +1,4 @@
-import API from './api'
+import { medium, github } from "./api"
 
-export const getPosts = () => API.get()
+export const getArticles = () => medium.get()
+export const getProjects = () => github.get()
