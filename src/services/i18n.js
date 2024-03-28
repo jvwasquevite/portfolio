@@ -183,11 +183,11 @@ const resources = {
         content: [
           {
             subheader: "Meu WhatsApp",
-            header: "+55 55 9 9712 8005",
+            header: "+55 51 9 9527 0276",
           },
           {
             subheader: "Meu Email",
-            header: "joao@jvwasquevite.com",
+            header: "jvwasquevite@gmail.com",
           },
           {
             subheader: "Em algum lugar entre",
@@ -374,11 +374,11 @@ const resources = {
         content: [
           {
             subheader: "My WhatsApp",
-            header: "+55 55 9 9712 8005",
+            header: "+55 51 9 9527 0276",
           },
           {
             subheader: "My Email",
-            header: "joao@jvwasquevite.com",
+            header: "jvwasquevite@gmail.com",
           },
           {
             subheader: "Somewhere between",
