@@ -37,9 +37,16 @@ const Projects = () => {
             <div key={key} className="project">
               <a href={project.html_url} target="_blank" rel="noreferrer">
                 <div className="content">
-                  <p className="sub-header">Medium</p>
-                  <h3>{project.name}</h3>
+                  <p className="sub-header">{project.language}</p>
+                  <h3>/{project.name}</h3>
                   <p className="secondary-text">{project.description}</p>
+                  <div className="topics">
+                    {project.topics.map((topic, key) => (
+                      <div className="topic" key={key}>
+                        {topic}
+                      </div>
+                    ))}
+                  </div>
                 </div>
               </a>
             </div>
@@ -73,39 +80,6 @@ const Projects = () => {
           <hr /> {t("projects.button.name")}
         </a>
       </div>
-      {/* <div className="slider">
-        <div className="content" style={{ left: slidePosition }}>
-          {data.map((project, key) => {
-            return (
-              <div id="slide" className="slide" key={key}>
-                <p className="sub-header">{project.language}</p>
-                <h2>{project.name}</h2>
-                <div className="skills">
-                  {project.topics.map((topic, key) => (
-                    <div className="skill" key={key}>
-                      {topic}
-                    </div>
-                  ))}
-                </div>
-                <p className="secondary-text">{project.description}</p>
-                {project.button ? (
-                  <a
-                    href={project.html_url}
-                    className="button"
-                    target="_blank"
-                    rel="noreferrer"
-                  >
-                    <hr /> Ver projeto
-                  </a>
-                ) : null}
-              </div>
-            )
-          })}
-        </div>
-        <div className="next" onClick={() => nextSlide()}>
-          <img src={arrowNext} alt="next" />
-        </div>
-      </div> */}
     </section>
   )
 }

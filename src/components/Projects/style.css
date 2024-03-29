@@ -3,10 +3,6 @@
   gap: 30px;
 }
 
-#Projects .container.animate {
-  animation: fadeInAnimation ease 1s;
-}
-
 #Projects .project {
   display: inline-block;
   width: 100%;
@@ -26,6 +22,21 @@
 
 #Projects a {
   text-decoration: none;
+}
+
+#Projects .topics {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 5px;
+}
+
+#Projects .topic {
+  background: var(--background-color);
+  font: 400 13px "Barlow", sans-serif;
+  color: var(--secondary-color);
+  margin: 5px 5px 0 0;
+  padding: 4px 10px;
+  border-radius: 3px;
 }
 
 #Projects .pagination {

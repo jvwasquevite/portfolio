@@ -1,12 +1,15 @@
 import axios from "axios"
 
 const medium = axios.create({
-  baseURL:
-    "https://api.rss2json.com/v1/api.json?rss_url=https://medium.com/feed/@jvwasquevite",
+  baseURL: process.env.REACT_APP_MEDIUM_BASE_URL,
 })
 
 const github = axios.create({
-  baseURL: "https://api.github.com/users/jvwasquevite/repos",
+  baseURL: process.env.REACT_APP_GITHUB_BASE_URL,
+  auth: {
+    username: process.env.REACT_APP_GITHUB_CLIENT_ID,
+    password: process.env.REACT_APP_GITHUB_CLIENT_SECRET,
+  },
 })
 
 export { medium, github }

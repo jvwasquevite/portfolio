@@ -45,15 +45,11 @@
 
 #Portfolio .skill {
   background: black;
-  font: 500 1em 'Barlow', sans-serif;
+  font: 500 1em "Barlow", sans-serif;
   color: var(--secondary-color);
   margin-right: 5px;
   padding: 5px 10px;
   border-radius: 3px;
-}
-
-#Portfolio .secondary-text {
-  line-height: 1.5em;
 }
 
 #Portfolio .button {

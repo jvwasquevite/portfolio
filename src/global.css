@@ -82,6 +82,7 @@ p.sub-header {
 p.secondary-text {
   font-size: 0.9em;
   line-height: normal;
+  line-height: 1.5em;
 }
 
 mark {
