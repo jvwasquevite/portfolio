@@ -111,7 +111,10 @@ const resources = {
             da Universidade Federal de Pelotas. Desenvolvido em <b>React</b>, o projeto é <b>integrado 
             com API</b> desenvolvida em Node.js, utiliza <b>recursos visuais animados em SVG</b> e 
             módulo de <b>integração com o WhatsApp</b>.`,
-            button: ["Ver projeto", "http://hut8.com.br/"],
+            button: [
+              "Ver projeto",
+              "https://www.behance.net/gallery/102513399/Hut8",
+            ],
           },
           {
             images: [`${vantumDesktop}`, `${vantumMobile}`],
@@ -121,7 +124,10 @@ const resources = {
             description: `Redesign de site institucional para a Vantum. Desenvolvido em <b>Vue</b>, o
             projeto é <b>integrado com o </b><a href="https://br.hubspot.com/" target="_blank" rel="noreferrer">Hubspot</a>,
             utiliza <b>recursos visuais animados em SVG</b> e <b>módulo de chatbot</b> integrado com um funil de vendas.`,
-            button: ["Ver projeto", "https://vantum.com.br/"],
+            button: [
+              "Ver projeto",
+              "https://www.behance.net/gallery/91939673/Vantum",
+            ],
           },
           {
             images: [`${hubiaDesktop}`, `${hubiaMobile}`],
@@ -131,7 +137,10 @@ const resources = {
             description: `Implementação de layout criado no <a href="https://www.figma.com/" target="_blank" rel="noreferrer">Figma</a>. 
             O projeto foi desenvolvido para <b>divulgar o Hub de Inovação em Inteligência Artificial da Universidade Federal de Pelotas</b>,
             que tem como objetivo alavancar a área de Inteligência Artificial na região.`,
-            button: ["Ver projeto", "http://ia.ufpel.edu.br/"],
+            button: [
+              "Ver projeto",
+              "https://www.behance.net/gallery/104976147/Hub-IA-UFPel",
+            ],
           },
           {
             images: [`${hocDesktop}`, `${hocMobile}`],
@@ -142,7 +151,10 @@ const resources = {
             para o Hospital Odontológico Cetao. Por meio da integração com o
             <a href="https://www.rdstation.com/" target="_blank" rel="noreferrer">RD Station</a>, os leads são
             encaminhados para um funil de vendas, permitindo mensurar as campanhas de marketing realizadas pela empresa.`,
-            button: ["Ver projeto", "https://hocetao.com.br/"],
+            button: [
+              "Ver projeto",
+              "https://www.behance.net/gallery/109995775/Hospital-Odontologico-Cetao",
+            ],
           },
           {
             images: [`${veritasDesktop}`, `${veritasMobile}`],
@@ -152,7 +164,10 @@ const resources = {
             description: `Redesign de site institucional para a Veritas Jurídico. Desenvolvido em Wordpress, o 
             projeto conta com <b>blog integrado</b> e todas as <b>adequações legais necessárias</b> para o 
             cumprimento da nova Lei Geral de Proteção de Dados.`,
-            button: ["Ver projeto", "https://veritasjuridico.com/"],
+            button: [
+              "Ver projeto",
+              "https://www.behance.net/gallery/109995867/Veritas-Juridico",
+            ],
           },
           {
             images: [`${leafpayDesktop}`, `${leafpayMobile}`],
@@ -162,7 +177,10 @@ const resources = {
             description: `Desenvolvimento de site institucional para a LeafPay, escritório contábil especializado 
             em gestão de folha de pagamento. Desenvolvido em Wordpress, o projeto conta com <b>blog integrado</b>, 
             vínculo com o WhatsApp e <b>ilustrações vetorizadas</b>.`,
-            button: ["Ver projeto", "https://leafpayrh.com.br/"],
+            button: [
+              "Ver projeto",
+              "https://www.behance.net/gallery/104976155/LeafPay",
+            ],
           },
         ],
         button: {
@@ -308,7 +326,10 @@ const resources = {
             of the Federal University of Pelotas. Developed with <b>React</b>, the project is <b>integrated 
             with an API</b> developed in Node.js, has <b>animated visual resources in SVG</b> and 
             <b>integration with WhatsApp</b> module.`,
-            button: ["See project", "http://hut8.com.br/"],
+            button: [
+              "See project",
+              "https://www.behance.net/gallery/102513399/Hut8",
+            ],
           },
           {
             images: [`${vantumDesktop}`, `${vantumMobile}`],
@@ -318,7 +339,10 @@ const resources = {
             description: `Institutional website redesign for Vantum. Developed with <b>Vue</b>, the
             project is <b>integrated with</b> <a href="https://www.hubspot.com/" target="_blank" rel="noreferrer">Hubspot</a>,
             has <b>animated visuals resources in SVG</b> and <b>chatbot module</b> integrated with a sales funnel.`,
-            button: ["See project", "https://vantum.com.br/"],
+            button: [
+              "See project",
+              "https://www.behance.net/gallery/91939673/Vantum",
+            ],
           },
           {
             images: [`${hubiaDesktop}`, `${hubiaMobile}`],
@@ -328,7 +352,10 @@ const resources = {
             description: `Implementation of a <a href="https://www.figma.com/" target="_blank" rel="noreferrer">Figma</a> layout.
             The project was developed to <b>disseminate the Artificial Intelligence Innovation Hub of the Federal University of Pelotas</b>,
             which aims to leverage the area of Artificial Intelligence in the region.`,
-            button: ["See project", "http://ia.ufpel.edu.br/"],
+            button: [
+              "See project",
+              "https://www.behance.net/gallery/104976147/Hub-IA-UFPel",
+            ],
           },
           {
             images: [`${hocDesktop}`, `${hocMobile}`],
@@ -339,7 +366,10 @@ const resources = {
             for the Cetao Dental Hospital. Through the integration with 
             <a href="https://www.rdstation.com/" target="_blank" rel="noreferrer">RD Station</a>, leads are
             forwarded to a sales funnel, allowing to measure the marketing campaigns created by the company.`,
-            button: ["See project", "https://hocetao.com.br/"],
+            button: [
+              "See project",
+              "https://www.behance.net/gallery/109995775/Hospital-Odontologico-Cetao",
+            ],
           },
           {
             images: [`${veritasDesktop}`, `${veritasMobile}`],
@@ -349,7 +379,10 @@ const resources = {
             description: `Redesign of an institutional website for Veritas Jurídico. Developed with Wordpress, the
             project has an <b>integrated blog</b> and all <b>necessary legal adjustments</b> for the
             compliance with the new General Data Protection Law.`,
-            button: ["See project", "https://veritasjuridico.com/"],
+            button: [
+              "See project",
+              "https://www.behance.net/gallery/109995867/Veritas-Juridico",
+            ],
           },
           {
             images: [`${leafpayDesktop}`, `${leafpayMobile}`],
@@ -359,7 +392,10 @@ const resources = {
             description: `Development of an institutional website for LeafPay, specialized accounting office
             in payroll management. Developed with Wordpress, the project has an <b>integrated blog</b>,
             integration to WhatsApp and <b>vectorized illustrations</b>.`,
-            button: ["See project", "https://leafpayrh.com.br/"],
+            button: [
+              "See project",
+              "https://www.behance.net/gallery/104976155/LeafPay",
+            ],
           },
         ],
         button: {
