@@ -5,9 +5,7 @@ import { useTranslation } from "react-i18next"
 import Parser from "html-react-parser"
 
 import arrowNext from "../../assets/images/arrow-right.svg"
-
-import { firestore } from "../../services/firebase"
-import { collection, getDocs, query, orderBy } from "firebase/firestore"
+import { getPortfolio } from "../../services/requests"
 
 const Portfolio = () => {
   const [slidePosition, setSlidePosition] = useState(0)
@@ -15,25 +13,14 @@ const Portfolio = () => {
   const [data, setData] = useState([])
 
   useEffect(() => {
-    async function fetchData() {
-      const portfolioCollection = query(
-        collection(firestore, "portfolio"),
-        orderBy("order")
-      )
-      const querySnapshot = await getDocs(portfolioCollection)
-
-      const portfolio = querySnapshot.docs.map(doc => ({
-        ...doc.data(),
-        id: doc.id,
-      }))
-
-      console.log(querySnapshot.docs)
-
-      setData(portfolio)
-    }
-
-    fetchData()
+    getPortfolio()
+      .then(res => {
+        setData(res)
+      })
+      .catch(err => console.error(err))
   }, [])
+
+  console.log(data)
 
   const portfolio = t("portfolio.content", { returnObjects: true })
 

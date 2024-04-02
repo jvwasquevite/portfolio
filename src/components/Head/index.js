@@ -1,12 +1,12 @@
-import React from 'react'
-import './style.css'
+import React from "react"
+import "./style.css"
 
-import About from '../About'
-import Menu from '../helpers/Menu'
-import SocialButtons from '../helpers/SocialButtons'
-import LangSwitcher from '../helpers/LangSwitcher'
+import About from "../About"
+import Menu from "../utils/Menu"
+import SocialButtons from "../utils/SocialButtons"
+import LangSwitcher from "../utils/LangSwitcher"
 
-import logo from '../../assets/images/logo.gif'
+import logo from "../../assets/images/logo.gif"
 
 const Head = () => {
   return (

@@ -1,11 +1,11 @@
-import React, { useContext, useState } from 'react'
-import './style.css'
+import React, { useContext, useState } from "react"
+import "./style.css"
 
-import { MenuContext } from '../../services/contexts/MenuContext'
-import LangSwitcher from '../helpers/LangSwitcher'
-import Menu from '../helpers/Menu'
+import { MenuContext } from "../../contexts/MenuContext"
+import LangSwitcher from "../utils/LangSwitcher"
+import Menu from "../utils/Menu"
 
-import navArrow from '../../assets/images/nav-arrow.svg'
+import navArrow from "../../assets/images/nav-arrow.svg"
 
 const Navbar = () => {
   const [menu, setMenu] = useState(false)
@@ -26,12 +26,12 @@ const Navbar = () => {
           >
             {menu ? (
               <>
-                {active}{' '}
+                {active}{" "}
                 <img src={navArrow} className="arrow open" alt="Close menu" />
               </>
             ) : (
               <>
-                {active}{' '}
+                {active}{" "}
                 <img src={navArrow} className="arrow" alt="Open menu" />
               </>
             )}

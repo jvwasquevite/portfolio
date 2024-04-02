@@ -13,7 +13,7 @@ import Foot from "../../components/Foot"
 import About from "../../components/About"
 import Navbar from "../../components/Navbar"
 
-import { MenuContextProvider } from "../../services/contexts/MenuContext"
+import { MenuContextProvider } from "../../contexts/MenuContext"
 import Projects from "../../components/Projects"
 
 const Home = () => {
