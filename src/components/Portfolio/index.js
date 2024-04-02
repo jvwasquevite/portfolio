@@ -1,19 +1,44 @@
-import React, { useState } from 'react'
-import './style.css'
+import React, { useState, useEffect } from "react"
+import "./style.css"
 
-import { useTranslation } from 'react-i18next'
-import Parser from 'html-react-parser'
+import { useTranslation } from "react-i18next"
+import Parser from "html-react-parser"
 
-import arrowNext from '../../assets/images/arrow-right.svg'
+import arrowNext from "../../assets/images/arrow-right.svg"
+
+import { firestore } from "../../services/firebase"
+import { collection, getDocs, query, orderBy } from "firebase/firestore"
 
 const Portfolio = () => {
   const [slidePosition, setSlidePosition] = useState(0)
-  const { t } = useTranslation()
+  const { t, i18n } = useTranslation()
+  const [data, setData] = useState([])
 
-  const portfolio = t('portfolio.content', { returnObjects: true })
+  useEffect(() => {
+    async function fetchData() {
+      const portfolioCollection = query(
+        collection(firestore, "portfolio"),
+        orderBy("order")
+      )
+      const querySnapshot = await getDocs(portfolioCollection)
+
+      const portfolio = querySnapshot.docs.map(doc => ({
+        ...doc.data(),
+        id: doc.id,
+      }))
+
+      console.log(querySnapshot.docs)
+
+      setData(portfolio)
+    }
+
+    fetchData()
+  }, [])
+
+  const portfolio = t("portfolio.content", { returnObjects: true })
 
   const nextSlide = () => {
-    const slideWidth = document.getElementById('slide').clientWidth
+    const slideWidth = document.getElementById("slide").clientWidth
 
     if (Math.abs(slidePosition) <= (portfolio.length - 2) * (slideWidth + 30)) {
       setSlidePosition(slidePosition - (slideWidth + 30))
@@ -26,39 +51,50 @@ const Portfolio = () => {
     <section id="Portfolio">
       <div className="slider">
         <div className="content" style={{ left: slidePosition }}>
-          {portfolio.map((item, key) => {
+          {data.map((item, key) => {
             return (
               <div id="slide" className="slide" key={key}>
                 <div className="mockup">
                   <img
-                    src={item.images[0]}
-                    alt={item.header}
+                    src={item.screenshots[0].downloadURL}
+                    alt={item.name}
                     className="desktop"
                   />
                   <img
-                    src={item.images[1]}
-                    alt={item.header}
+                    src={item.screenshots[1].downloadURL}
+                    alt={item.name}
                     className="mobile"
                   />
                 </div>
-                <p className="sub-header">{item.subheader}</p>
-                <h2>{item.header}</h2>
+                <p className="sub-header">{item.language}</p>
+                <h2>
+                  {i18n.language === "pt"
+                    ? item.name[0]
+                    : item.name[1]
+                    ? item.name[1]
+                    : item.name[0]}
+                </h2>
                 <div className="skills">
-                  {item.skills.map((skill, key) => (
+                  {item.topics.map((topic, key) => (
                     <div className="skill" key={key}>
-                      {skill}
+                      {topic}
                     </div>
                   ))}
                 </div>
-                <p className="secondary-text">{Parser(item.description)}</p>
-                {item.button ? (
+                <div className="secondary-text">
+                  {i18n.language === "pt"
+                    ? Parser(item.ptDescription)
+                    : Parser(item.enDescription)}
+                </div>
+                {item.url ? (
                   <a
-                    href={item.button[1]}
+                    href={item.url}
                     className="button"
                     target="_blank"
                     rel="noreferrer"
                   >
-                    <hr /> {item.button[0]}
+                    <hr />{" "}
+                    {i18n.language === "pt" ? "Ver projeto" : "See project"}
                   </a>
                 ) : null}
               </div>
@@ -70,12 +106,12 @@ const Portfolio = () => {
         </div>
       </div>
       <a
-        href={t('portfolio.button.url')}
+        href={t("portfolio.button.url")}
         className="button more"
         target="_blank"
         rel="noreferrer"
       >
-        <hr /> {t('portfolio.button.name')}
+        <hr /> {t("portfolio.button.name")}
       </a>
     </section>
   )
