@@ -6,18 +6,43 @@ import { medium, github } from "./api"
 /**
  * Internal docs queries with Firebase Cloud Firestore
  **/
-export const getPortfolio = async () => {
+export const getPortfolio = async language => {
   const portfolioCollection = query(
     collection(firestore, "portfolio"),
-    orderBy("order")
+    orderBy("sort")
   )
 
   const querySnapshot = await getDocs(portfolioCollection)
 
-  const docsData = querySnapshot.docs.map(doc => ({
-    ...doc.data(),
-    id: doc.id,
-  }))
+  const docsData =
+    language === "pt"
+      ? querySnapshot.docs.map(doc => ({
+          id: doc.id,
+          name: doc.data().name[0],
+          language: doc.data().language,
+          topics: doc.data().topics,
+          description: doc.data().ptDescription,
+          screenshots: {
+            desktop: doc.data().screenshots[0].downloadURL,
+            mobile: doc.data().screenshots[1].downloadURL,
+          },
+          url: doc.data().url,
+        }))
+      : querySnapshot.docs.map(doc => ({
+          id: doc.id,
+          name:
+            doc.data().name.length === 1
+              ? doc.data().name[0]
+              : doc.data().name[1],
+          language: doc.data().language,
+          topics: doc.data().topics,
+          description: doc.data().enDescription,
+          screenshots: {
+            desktop: doc.data().screenshots[0].downloadURL,
+            mobile: doc.data().screenshots[1].downloadURL,
+          },
+          url: doc.data().url,
+        }))
 
   return docsData
 }

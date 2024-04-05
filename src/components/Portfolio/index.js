@@ -12,15 +12,15 @@ const Portfolio = () => {
   const { t, i18n } = useTranslation()
   const [data, setData] = useState([])
 
+  const language = i18n.language
+
   useEffect(() => {
-    getPortfolio()
+    getPortfolio(language)
       .then(res => {
         setData(res)
       })
       .catch(err => console.error(err))
-  }, [])
-
-  console.log(data)
+  }, [language])
 
   const portfolio = t("portfolio.content", { returnObjects: true })
 
@@ -43,24 +43,18 @@ const Portfolio = () => {
               <div id="slide" className="slide" key={key}>
                 <div className="mockup">
                   <img
-                    src={item.screenshots[0].downloadURL}
+                    src={item.screenshots.desktop}
                     alt={item.name}
                     className="desktop"
                   />
                   <img
-                    src={item.screenshots[1].downloadURL}
+                    src={item.screenshots.mobile}
                     alt={item.name}
                     className="mobile"
                   />
                 </div>
                 <p className="sub-header">{item.language}</p>
-                <h2>
-                  {i18n.language === "pt"
-                    ? item.name[0]
-                    : item.name[1]
-                    ? item.name[1]
-                    : item.name[0]}
-                </h2>
+                <h2>{item.name}</h2>
                 <div className="skills">
                   {item.topics.map((topic, key) => (
                     <div className="skill" key={key}>
@@ -68,20 +62,15 @@ const Portfolio = () => {
                     </div>
                   ))}
                 </div>
-                <div className="secondary-text">
-                  {i18n.language === "pt"
-                    ? Parser(item.ptDescription)
-                    : Parser(item.enDescription)}
-                </div>
+                <div className="secondary-text">{Parser(item.description)}</div>
                 {item.url ? (
                   <a
                     href={item.url}
-                    className="button"
+                    className="button see-project"
                     target="_blank"
                     rel="noreferrer"
                   >
-                    <hr />{" "}
-                    {i18n.language === "pt" ? "Ver projeto" : "See project"}
+                    <hr /> {language === "pt" ? "Ver projeto" : "See project"}
                   </a>
                 ) : null}
               </div>
@@ -92,14 +81,17 @@ const Portfolio = () => {
           <img src={arrowNext} alt="next" />
         </div>
       </div>
-      <a
-        href={t("portfolio.button.url")}
-        className="button more"
-        target="_blank"
-        rel="noreferrer"
-      >
-        <hr /> {t("portfolio.button.name")}
-      </a>
+      <div className="foot">
+        <p>{Parser(t("portfolio.integration"))}</p>
+        <a
+          href={t("portfolio.button.url")}
+          className="button more"
+          target="_blank"
+          rel="noreferrer"
+        >
+          <hr /> {t("portfolio.button.name")}
+        </a>
+      </div>
     </section>
   )
 }

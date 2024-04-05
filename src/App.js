@@ -1,8 +1,8 @@
-import React from 'react'
-import './services/i18n'
+import React from "react"
 
-import Routes from './routes'
-import './global.css'
+import Routes from "./routes"
+import "./services/i18n"
+import "./global.css"
 
 const App = () => {
   return <Routes />

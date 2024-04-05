@@ -1,15 +1,15 @@
-import React from 'react'
-import './style.css'
+import React from "react"
+import "./style.css"
 
-import { useTranslation } from 'react-i18next'
-import Parser from 'html-react-parser'
+import { useTranslation } from "react-i18next"
+import Parser from "html-react-parser"
 
 const Resume = () => {
   const { t } = useTranslation()
 
   return (
     <section id="Resume">
-      {t('resume.main', { returnObjects: true }).map((item, key) => {
+      {t("resume.main", { returnObjects: true }).map((item, key) => {
         return (
           <div className="container" key={key}>
             <div className="image">
@@ -26,7 +26,7 @@ const Resume = () => {
       })}
 
       <div className="secondary">
-        {t('resume.secondary', { returnObjects: true }).map((item, key) => {
+        {t("resume.secondary", { returnObjects: true }).map((item, key) => {
           return (
             <div className="container" key={key}>
               <div className="content">
@@ -44,7 +44,7 @@ const Resume = () => {
         target="_blank"
         rel="noreferrer"
       >
-        <hr /> {t('resume.button')}
+        <hr /> {t("resume.button")}
       </a>
     </section>
   )
