@@ -90,7 +90,7 @@
 /* For smaller devices */
 @media (max-width: 1150px) {
   #Projects .container {
-    display: block;
+    columns: unset;
   }
 
   #Projects .foot {
@@ -100,14 +100,5 @@
 
   #Projects .foot p {
     margin-bottom: 10px;
-  }
-}
-
-@keyframes fadeInAnimation {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
   }
 }
