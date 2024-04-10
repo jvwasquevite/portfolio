@@ -1,4 +1,11 @@
-import { collection, getDocs, query, orderBy } from "firebase/firestore"
+import {
+  collection,
+  getDocs,
+  query,
+  orderBy,
+  doc,
+  getDoc,
+} from "firebase/firestore"
 import { firestore } from "../services/firebase"
 
 import { medium, github } from "./api"
@@ -45,6 +52,37 @@ export const getPortfolio = async language => {
         }))
 
   return docsData
+}
+
+export const getJob = async company => {
+  const jobReference = doc(firestore, "jobs", company)
+  const jobSnapshot = await getDoc(jobReference)
+
+  if (!jobSnapshot.exists()) {
+    throw new Error("Not found")
+  }
+
+  const jobData = jobSnapshot.data()
+
+  const applicationsCollection = query(
+    collection(jobReference, "applications"),
+    orderBy("sort")
+  )
+  const applicationsSnapshot = await getDocs(applicationsCollection)
+
+  const applications = applicationsSnapshot.docs.map(doc => ({
+    id: doc.id,
+    ...doc.data(),
+  }))
+
+  const docData = {
+    name: jobData.companyName,
+    logo: jobData.companyLogo[0].downloadURL,
+    multipleApplications: applications.length > 1 ? true : false,
+    applications,
+  }
+
+  return docData
 }
 
 /**

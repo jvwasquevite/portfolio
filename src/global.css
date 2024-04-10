@@ -2,11 +2,20 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
 
 :root {
-  --background-color: #151515;
-  --background-secondary-color: #202022;
-  --primary-color: #ffffff;
-  --secondary-color: #949495;
-  --tertiary-color: #f2c94c;
+  /* Color pallete */
+  --grey-dark-color: #151515;
+  --grey-light-color: #202022;
+
+  --white-color: #ffffff;
+  --grey-color: #949495;
+  --yellow-color: #f2c94c;
+
+  /* App theme */
+  --background-color: var(--grey-dark-color);
+  --background-secondary-color: var(--grey-light-color);
+  --primary-color: var(--white-color);
+  --secondary-color: var(--grey-color);
+  --tertiary-color: var(--yellow-color);
 }
 
 * {
@@ -21,6 +30,14 @@ body {
   color: var(--primary-color);
   -webkit-font-smoothing: antialiased;
   font-size: 16px;
+}
+
+input {
+  all: unset;
+}
+
+::placeholder {
+  opacity: 1;
 }
 
 section,
@@ -91,16 +108,40 @@ mark {
   background: none;
 }
 
-button {
-  background: #202022;
-  width: 70px;
-  height: 31px;
-  border: none;
-  border-radius: 3px;
-  font-size: 12px;
-  text-transform: uppercase;
+input[type="text"] {
+  width: 100%;
+  height: 30px;
+  font: 400 12px "Inter", sans-serif;
   color: var(--secondary-color);
   letter-spacing: 3px;
+  text-transform: uppercase;
+  text-decoration: none;
+  border-bottom: 1px solid var(--secondary-color);
+}
+
+button {
+  border: none;
+  border-radius: 3px;
+  padding: 0 12px;
+  height: 30px;
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  cursor: pointer;
+}
+
+button.btn-primary {
+  background: var(--tertiary-color);
+  color: var(--grey-dark-color);
+}
+
+button.btn-secondary {
+  background: var(--background-secondary-color);
+  color: var(--secondary-color);
+}
+
+button:hover {
+  opacity: 0.8;
 }
 
 .button {
