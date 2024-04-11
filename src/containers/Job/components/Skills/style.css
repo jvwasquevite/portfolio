@@ -1,0 +1,36 @@
+#Skills .speech {
+  width: fit-content;
+  margin-bottom: 30px;
+}
+
+#Skills .container {
+  position: relative;
+  background: var(--background-secondary-color);
+  width: 100%;
+  border-radius: 3px;
+  margin-bottom: 15px;
+  z-index: -1;
+}
+
+#Skills .content {
+  padding: 20px;
+}
+
+#Skills .bar {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background: black;
+  width: 0px;
+  height: 100%;
+  border-radius: 3px;
+  transition: width 2s ease-out;
+  z-index: -2;
+}
+
+#Skills .button {
+  float: right;
+  margin-top: 15px;
+}

@@ -1,0 +1,74 @@
+#Job {
+  display: grid;
+  width: 1150px;
+  margin: 0 auto;
+  grid-template-columns: 1fr 570px;
+  gap: 100px;
+}
+
+#Job aside {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100vh;
+}
+
+#Job main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100vh;
+}
+
+#Job h2 {
+  margin-bottom: 10px;
+}
+
+#Job p {
+  margin-bottom: 5px;
+}
+
+#Job strong {
+  color: var(--primary-color);
+}
+
+#Job img.picture {
+  border-radius: 3px;
+}
+
+#Job .speech {
+  position: relative;
+  background: var(--primary-color);
+  color: var(--grey-dark-color);
+  border-radius: 3px 3px 3px 0px;
+  margin-bottom: 10px;
+}
+
+#Job .speech::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 0;
+  border: 10px solid transparent;
+  border-top-color: var(--primary-color);
+  border-bottom: 0;
+  border-left: 0;
+  margin-bottom: -10px;
+}
+
+#Job .speech p {
+  font: 400 12px "Inter", sans-serif;
+  color: var(--grey-light-color);
+  padding: 10px;
+  margin: 0;
+}
+
+@media (max-width: 1150px) {
+  #Job {
+    display: block;
+    width: 100%;
+    padding: 0 30px;
+  }
+}

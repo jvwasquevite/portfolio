@@ -76,10 +76,14 @@ export const getJob = async company => {
   }))
 
   const docData = {
-    name: jobData.companyName,
+    companyName: jobData.companyName,
     logo: jobData.companyLogo[0].downloadURL,
+    jobFocus: jobData.jobFocus,
+    jobStack: jobData.jobStack,
+    jobSkills: jobData.jobSkills,
     multipleApplications: applications.length > 1 ? true : false,
     applications,
+    finals: jobData.finals,
   }
 
   return docData

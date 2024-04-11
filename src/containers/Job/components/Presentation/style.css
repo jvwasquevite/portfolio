@@ -1,0 +1,23 @@
+#Presentation .logo {
+  max-height: 60px;
+  margin-bottom: 20px;
+}
+
+#Presentation b.different {
+  animation: background-pan 1.5s linear infinite;
+  background: linear-gradient(to right, #f2c94c, rgb(255, 235, 176), #f2c94c);
+  background-size: 200%;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  white-space: nowrap;
+}
+
+@keyframes background-pan {
+  from {
+    background-position: 0 center;
+  }
+  to {
+    background-position: -200% center;
+  }
+}

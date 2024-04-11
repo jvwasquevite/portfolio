@@ -1,0 +1,19 @@
+#Navigator {
+  display: flex;
+  margin-top: 10px;
+  gap: 10px;
+}
+
+#Navigator input {
+  opacity: 0.8;
+}
+
+@media (max-width: 1150px) {
+  #Navigator {
+    display: block;
+  }
+
+  #Navigator input {
+    margin-bottom: 20px;
+  }
+}
