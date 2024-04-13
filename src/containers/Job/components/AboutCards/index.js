@@ -15,6 +15,11 @@ const AboutCards = ({ props }) => {
       <div className="container primary">
         <div className="picture">
           <img src={picture} alt="João Wasquevite" />
+          <div className="speech">
+            <p>
+              Esse da <b>foto</b> sou eu!
+            </p>
+          </div>
         </div>
         <div className="card">
           <div className="content">

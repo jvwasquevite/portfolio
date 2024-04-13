@@ -1,6 +1,8 @@
 import React from "react"
-import Parser from "html-react-parser"
 import "./style.css"
+
+import Parser from "html-react-parser"
+import SocialButtons from "../../../../components/utils/SocialButtons"
 
 const Finals = ({ props }) => {
   let name = ""
@@ -21,6 +23,7 @@ const Finals = ({ props }) => {
         E aí<b>{props.name && " " + props.name}</b>, será que <b>deu match</b>?
       </h1>
       {Parser(props.finals)}
+      <SocialButtons />
     </div>
   )
 }

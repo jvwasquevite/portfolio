@@ -23,6 +23,10 @@
   border-radius: 3px;
 }
 
+#AboutCards .picture .speech {
+  display: none;
+}
+
 #AboutCards .behance {
   display: flex;
   justify-content: center;
@@ -69,4 +73,45 @@
 
 #AboutCards .button {
   float: right;
+}
+
+@media (max-width: 1150px) {
+  #AboutCards .speech {
+    display: none;
+    margin: 0;
+  }
+
+  #AboutCards .container {
+    display: block;
+    margin: 0;
+  }
+
+  #AboutCards .picture {
+    display: flex;
+    align-items: flex-end;
+    width: 100%;
+    margin-bottom: 30px;
+    gap: 30px;
+  }
+
+  #AboutCards .picture img {
+    max-width: 80px;
+  }
+
+  #AboutCards .picture .speech {
+    display: block;
+    margin-bottom: 10px;
+  }
+
+  #AboutCards .card {
+    margin-bottom: 30px;
+  }
+
+  #AboutCards .card .content {
+    padding: 30px;
+  }
+
+  #AboutCards .behance {
+    display: none;
+  }
 }

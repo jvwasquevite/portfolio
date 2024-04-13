@@ -3,7 +3,7 @@ import "./style.css"
 
 const Navigator = ({ props }) => {
   return (
-    <div id="Navigator">
+    <div id="Navigator" className={props.currentIndex === 0 && "presentation"}>
       {props.currentIndex === 0 ? (
         <input
           type="text"

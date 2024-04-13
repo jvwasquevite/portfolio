@@ -65,10 +65,33 @@
   margin: 0;
 }
 
+@media (min-width: 1150px) {
+  #Job main #Navigator {
+    display: none;
+  }
+}
+
 @media (max-width: 1150px) {
   #Job {
     display: block;
     width: 100%;
-    padding: 0 30px;
+    padding: 60px 30px;
+  }
+
+  #Job aside,
+  #Job main {
+    height: auto;
+  }
+
+  #Job aside {
+    margin-bottom: 30px;
+  }
+
+  #Job aside #Navigator {
+    display: none;
+  }
+
+  #Job section {
+    padding: 0;
   }
 }

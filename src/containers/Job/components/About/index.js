@@ -13,7 +13,7 @@ const About = ({ props }) => {
   }
 
   return (
-    <div id="About">
+    <div id="AboutMe">
       <p className="sub-header">Sobre mim</p>
       <h1>
         Prazer, <strong>{props.name && props.name}</strong>

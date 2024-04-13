@@ -7,8 +7,8 @@ import Applications from "./components/Applications"
 import { getJob } from "../../services/requests"
 
 import Navigator from "./components/utils/Navigator"
-import About from "./components/About"
 
+import About from "./components/About"
 import Projects from "../../components/Projects"
 import Background from "./components/Background"
 import AboutCards from "./components/AboutCards"
@@ -38,6 +38,18 @@ const Job = () => {
 
   const [name, setName] = useState("")
   const [currentIndex, setCurrentIndex] = useState(0)
+
+  const handleNextClick = () => {
+    if (currentIndex < pages.length - 1) {
+      setCurrentIndex(currentIndex + 1)
+    }
+  }
+
+  const handlePrevClick = () => {
+    if (currentIndex > 0) {
+      setCurrentIndex(currentIndex - 1)
+    }
+  }
 
   const pages = [
     {
@@ -81,23 +93,12 @@ const Job = () => {
     },
   ]
 
-  const handleNextClick = () => {
-    if (currentIndex < pages.length - 1) {
-      setCurrentIndex(currentIndex + 1)
-    }
-  }
-
-  const handlePrevClick = () => {
-    if (currentIndex > 0) {
-      setCurrentIndex(currentIndex - 1)
-    }
-  }
-
   return (
     <main id="Job">
       <aside>
         {pages[currentIndex].aside}
         <Navigator
+          className="desktop"
           props={{
             handlePrevClick,
             handleNextClick,
@@ -109,7 +110,21 @@ const Job = () => {
           }}
         />
       </aside>
-      <main>{pages[currentIndex].main}</main>
+      <main>
+        {pages[currentIndex].main}
+        <Navigator
+          className="mobile"
+          props={{
+            handlePrevClick,
+            handleNextClick,
+            name,
+            setName,
+            currentIndex,
+            setCurrentIndex,
+            length: pages.length,
+          }}
+        />
+      </main>
     </main>
   )
 }

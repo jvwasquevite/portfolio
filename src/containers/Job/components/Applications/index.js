@@ -3,7 +3,7 @@ import "./style.css"
 
 const Applications = ({ props }) => {
   return (
-    <section id="Applications">
+    <div id="Applications">
       <div className="head">
         <img src={props.logo} alt="logo" />
         <div className="speech">
@@ -36,7 +36,7 @@ const Applications = ({ props }) => {
           )
         })}
       </div>
-    </section>
+    </div>
   )
 }
 

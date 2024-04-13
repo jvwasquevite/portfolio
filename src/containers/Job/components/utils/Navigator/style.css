@@ -10,10 +10,15 @@
 
 @media (max-width: 1150px) {
   #Navigator {
-    display: block;
+    justify-content: space-between;
+    margin-top: 30px;
   }
 
   #Navigator input {
-    margin-bottom: 20px;
+    margin-bottom: 5px;
+  }
+
+  #Navigator.presentation {
+    flex-direction: column;
   }
 }

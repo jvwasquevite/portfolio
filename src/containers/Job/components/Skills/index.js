@@ -12,7 +12,7 @@ const Skills = ({ props }) => {
     <div id="Skills">
       <div className="speech">
         <p>
-          <b>Skills</b> que achei mais <b>pertinente</b>.
+          As <b>skills</b> que achei mais <b>pertinente</b>.
         </p>
       </div>
       {props.jobSkills.map((item, key) => {
