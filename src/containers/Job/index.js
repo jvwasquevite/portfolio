@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react"
-import { useParams } from "react-router"
+import { useParams } from "react-router-dom"
 import "./style.css"
 
 import Presentation from "./components/Presentation"
@@ -18,8 +18,7 @@ import Contact from "../../components/Contact"
 import Finals from "./components/Finals"
 
 const Job = () => {
-  const params = useParams()
-  const company = params.company
+  const { company } = useParams()
 
   const [data, setData] = useState([])
   const [applications, setApplications] = useState([])
